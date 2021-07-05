@@ -32,7 +32,7 @@
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -53,7 +53,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f82249;
+  background: #9F805A;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #052D4F;
   color: #fff;
 }
 
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: #9F805A;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -170,14 +170,14 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: #9F805A;
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
@@ -197,15 +197,15 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 /*--------------------------------------------------------------
-# Buy Tickets
+# Register Now
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #f82249;
+  background: #9F805A;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid #9F805A;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -259,8 +259,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(5, 45, 79);
-  font-family: "Raleway", sans-serif;
+  color: rgb(5, 45, 79);
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: #9F805A;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: rgba(5, 45, 79);
+  color: rgb(5, 45, 79);
 }
 
 .navbar .dropdown ul {
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #f82249;
+  color: #9F805A;
 }
 
 .navbar .dropdown:hover > ul {
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #f82249;
+  color: #9F805A;
 }
 
 .navbar-mobile .getstarted {
@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #f82249;
+  color: #9F805A;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -470,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/bg/sean-pollock-PhYq704ffdA-unsplash.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -484,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -514,7 +514,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -614,7 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .about-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -627,11 +627,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid #9F805A;
 }
 
 #hero .about-btn:hover {
-  background: #f82249;
+  background: #9F805A;
   color: #fff;
 }
 
@@ -666,7 +666,18 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 100px 0 100px 0;
+}
+
+.about-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.about-desc{
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
 }
 
 @media (min-width: 1024px) {
@@ -1155,7 +1166,7 @@ h1, h2, h3, h4, h5, h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #f82249;
+  font-family: "Poppins", SansSerif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
