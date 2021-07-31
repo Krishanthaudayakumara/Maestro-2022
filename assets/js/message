@@ -1,0 +1,49 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyAscGIgvh8t4TBEsaxyjeLWpyYaha90HGI",
+    authDomain: "maestrotest-e1684.firebaseapp.com",
+    projectId: "maestrotest-e1684",
+    storageBucket: "maestrotest-e1684.appspot.com",
+    messagingSenderId: "1075019959077",
+    appId: "1:1075019959077:web:955ed58fa689105763e8cc"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore()
+
+console.log("done")
+//access database
+const db = firestore.collection("messages");
+let sendBtn = document.getElementById('sendMsg');
+
+sendBtn.addEventListener("click",e=>{
+    console.log("done")
+    e.preventDefault()
+    document.getElementById("loading").style.display = "block";
+    document.getElementById("msgSent").style.display = "none";
+    let data = {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    }
+
+    data.name = document.getElementById("name").value
+    data.email = document.getElementById("email").value
+    data.message = document.getElementById("message").value
+    data.subject = document.getElementById("subject").value
+    console.log(data)
+    console.log(document.getElementById("name").value)
+
+    if (document.getElementById("msgForm").checkValidity()){
+        db.doc().set(data).then(()=>{
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("msgSent").style.display = "block";
+            console.log("done 2")
+
+        }).catch((e)=>{
+            console.log(e)
+        })
+    }else{
+        document.getElementById("loading").style.display = "none";
+    }
+})

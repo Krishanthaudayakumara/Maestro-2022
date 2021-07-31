@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Maestro 2021</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon_custom.png" rel="icon">
+    <link href="assets/img/favicon_custom.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144825636-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144825636-7');
+    </script>
+
+</head>
+
+<body class="registration-form-body">
+
+    <header class="d-flex align-items-center " id="header">
+        <div class="container-fluid container-xxl d-flex align-items-center lheader">
+
+            <div class="me-auto" id="logo">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+                <a class="scrollto" href="index.html"><img alt="" class="logo" src="assets\img\Maestro 2020 logo.png"
+                        title=""></a>
+            </div>
+
+            <!--        <nav id="navbar" class="navbar order-last order-lg-0">-->
+            <!--            <ul>-->
+            <!--                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>-->
+            <!--                <li><a class="nav-link scrollto" href="#about">About</a></li>-->
+            <!--                &lt;!&ndash; <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li> &ndash;&gt;-->
+            <!--                <li><a class="nav-link scrollto" href="#schedule">Timeline</a></li>-->
+            <!--                &lt;!&ndash; <li><a class="nav-link scrollto" href="#venue">Venue</a></li> &ndash;&gt;-->
+            <!--                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>-->
+            <!--                &lt;!&ndash;          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>&ndash;&gt;-->
+            <!--                <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>-->
+            <!--                &lt;!&ndash; <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>-->
+            <!--                <ul>-->
+            <!--                  <li><a href="#">Drop Down 1</a></li>-->
+            <!--                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>-->
+            <!--                    <ul>-->
+            <!--                      <li><a href="#">Deep Drop Down 1</a></li>-->
+            <!--                      <li><a href="#">Deep Drop Down 2</a></li>-->
+            <!--                      <li><a href="#">Deep Drop Down 3</a></li>-->
+            <!--                      <li><a href="#">Deep Drop Down 4</a></li>-->
+            <!--                      <li><a href="#">Deep Drop Down 5</a></li>-->
+            <!--                    </ul>-->
+            <!--                  </li>-->
+            <!--                  <li><a href="#">Drop Down 2</a></li>-->
+            <!--                  <li><a href="#">Drop Down 3</a></li>-->
+            <!--                  <li><a href="#">Drop Down 4</a></li>-->
+            <!--                </ul>-->
+            <!--              </li> &ndash;&gt;-->
+            <!--                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>-->
+            <!--            </ul>-->
+            <!--            <i class="bi bi-list mobile-nav-toggle"></i>-->
+            <!--        </nav>&lt;!&ndash; .navbar &ndash;&gt;-->
+            <a class="buy-tickets scrollto" href="index.html">Go Back</a>
+
+        </div>
+    </header><!-- End Header -->
+
+
+    <main>
+
+        <!-- ======= Registration Section ======= -->
+        <section class="section-bg" id="contact" style="margin-top: 100px">
+
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Registration Form</h2>
+                </div>
+
+
+                <div class="form">
+                    <form action="javascript:checkValidity()" class="php-email-form" id="registration-form"
+                        method="post" role="form">
+                        <h4 class="registration-form-label registration-form-member">Team information</h4>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Name of the University / Educational Institute /
+                                    Rotaract Club<sup>*</sup></h6>
+                                <input class="form-control" id="institute-name" name="institute-name"
+                                    placeholder="University / Educational Institute / Rotaract Club" required
+                                    type="text">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Team name<sup>*</sup></h6>
+                                <input class="form-control" id="team-name" name="team-name" placeholder="Team name"
+                                    required type="text">
+                            </div>
+                        </div>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Number of team members<sup>*</sup></h6>
+                                <!--                            <input class="form-control" id="team-count" name="team-count" placeholder="Number of team members" required-->
+                                <!--                                   type="number">-->
+                                <select aria-label="Default select example" class="form-select" id="members" required>
+                                    <option value="3">Three</option>
+                                    <option selected value="4">Four</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h5 class="registration-form-label registration-form-member">Team member 1 (Captain)</h5>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                                <input class="form-control" id="mem-1-name" name="mem-1-name"
+                                    placeholder="eg : A.D. John Doe" required type="text">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                                <input class="form-control" id="mem-1-age" max="26" min="18" name="mem-1-age"
+                                    placeholder="Age" required type="number">
+                            </div>
+                        </div>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                                <input class="form-control" id="mem-1-email" name="mem-1-email"
+                                    placeholder="Email Address" required type="email">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                                <input class="form-control" id="mem-1-mob" maxlength="12" minlength="12"
+                                    name="mem-1-mob" placeholder="eg : +9412345678912" required type="text">
+                            </div>
+                        </div>
+
+
+                        <h5 class="registration-form-label registration-form-member">Team member 2</h5>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                                <input class="form-control" id="mem-2-name" name="mem-2-name"
+                                    placeholder="eg : A.D. John Doe" required type="text">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                                <input class="form-control" id="mem-2-age" max="26" min="18" name="mem-2-age"
+                                    placeholder="Age" required type="number">
+                            </div>
+                        </div>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                                <input class="form-control" id="mem-2-email" name="mem-2-email"
+                                    placeholder="Email Address" required type="email">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                                <input class="form-control" id="mem-2-mob" maxlength="12" minlength="12"
+                                    name="mem-2-mob" placeholder="eg : +9412345678912" required type="text">
+                            </div>
+                        </div>
+
+                        <h5 class="registration-form-label registration-form-member">Team member 3 </h5>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                                <input class="form-control" id="mem-3-name" name="mem-3-name"
+                                    placeholder="eg : A.D. John Doe" required type="text">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                                <input class="form-control" id="mem-3-age" max="26" min="18" name="mem-3-age"
+                                    placeholder="Age" required type="number">
+                            </div>
+                        </div>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                                <input class="form-control" id="mem-3-email" name="mem-3-email"
+                                    placeholder="Email Address" required type="email">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                                <input class="form-control" id="mem-3-mob" maxlength="12" minlength="12"
+                                    name="mem-3-mob" placeholder="eg : +9412345678912" required type="text">
+                            </div>
+                        </div>
+
+                        <h5 class="registration-form-label registration-form-member">Team member 4 </h5>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Full Name<sup>**</sup></h6>
+                                <input class="form-control" id="mem-4-name" name="mem-4-name"
+                                    placeholder="eg : A.D. John Doe" required type="text">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Age<sup>**</sup></h6>
+                                <input class="form-control" id="mem-4-age" max="26" min="18" name="mem-4-age"
+                                    placeholder="Age" required type="number">
+                            </div>
+                        </div>
+                        <div class="row registration-form-row">
+                            <div class="form-group col-md-6">
+                                <h6 class="registration-form-label">Email Address<sup>**</sup></h6>
+                                <input class="form-control" id="mem-4-email" name="mem-4-email"
+                                    placeholder="Email Address" required type="email">
+                            </div>
+                            <div class="form-group col-md-6 mt-3 mt-md-0">
+                                <h6 class="registration-form-label">Mobile Number<sup>**</sup></h6>
+                                <input class="form-control" id="mem-4-mob" maxlength="12" minlength="12"
+                                    name="mem-4-mob" placeholder="eg : +9412345678912" required type="text">
+                            </div>
+                        </div>
+
+                        <div class="my-3">
+                            <div class="loading" id="loading">Loading</div>
+                            <div class="required" style="margin-top: 15px">These fields are required <sup>*</sup> </div>
+                            <div class="required">These fields are required if the team consists of 4 members
+                                <sup>**</sup> </div>
+                            <div class="error-message" id="error-message"></div>
+                            <div class="sent-message">Your registration details have been submitted. Thank you!</div>
+                        </div>
+                        <div class="text-center" style="margin-top: 60px">
+                            <button id="submit" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <img alt="Rotaract Club of University of Moratuwa" src="assets/img/Logo_2.png">
+                        <p>
+                            Rotaract Mora is about serving our kind and the living as a whole,
+                            exploring new territory, creating opportunities, and building future
+                            leaders. We are much more than the typical volunteer organization; our mission is to not
+                            only serve others but also to develop ourselves into better human beings
+                            through the process.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">About us</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Timeline</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Gallery</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">FAQ</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto"
+                                    href="register.html">Register</a></li>
+                        </ul>
+                    </div>
+
+                    <!--          <div class="col-lg-3 col-md-6 footer-links">-->
+                    <!--            <h4>Useful Links</h4>-->
+                    <!--            <ul>-->
+                    <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>-->
+                    <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>-->
+                    <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>-->
+                    <!--              <li><i class="bi bi-chevron-right"></i> <a h  ref="#">Terms of service</a></li>-->
+                    <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+                    <!--            </ul>-->
+                    <!--          </div>-->
+
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Rotaract Club of University of Moratuwa,<br>
+                            University of Moratuwa,<br>
+                            Bandaranayake Mawatha,<br>
+                            Moratuwa. <br>
+                            10400 <br>
+                            <!--              <strong>Phone:</strong> +1 5589 55488 55<br>-->
+                            <strong>Email:</strong> admin@rotaractmora.org<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a class="twitter" href="https://twitter.com/RotaractMora"><i class="bi bi-twitter"></i></a>
+                            <a class="facebook" href="https://www.facebook.com/rotaractmora"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a class="instagram" href="https://www.instagram.com/rotaractmora"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="linkedin"
+                                href="https://lk.linkedin.com/company/rotaract-club-of-university-of-moratuwa"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a class="linkedin" href="https://www.youtube.com/user/rotaractmora"><i
+                                    class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                Copyright &copy; <a href="https://rotaractmora.org/"><strong>Rotaract Club of University of Moratuwa
+                        |</strong></a> All Rights Reserved
+            </div>
+            <div class="credits">
+
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
+
+    <a class="back-to-top d-flex align-items-center justify-content-center" href="#"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/register.js"></script>
+
+</body>
+
+</html>
