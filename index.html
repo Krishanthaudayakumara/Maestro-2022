@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1589,7 +1590,7 @@
         </div> -->
 
         <div class="form">
-          <form class="php-email-form" id="msgForm" method="post" role="form">
+          <form class="php-email-form" id="msgForm" method="post" role="form" action="forms\contact.php" >
             <div class="row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1610,7 +1611,7 @@
               <div class="error-message"></div>
               <div class="sent-message" id="msgSent">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button id="sendMsg" type="submit">Send Message</button></div>
+            <div class="text-center"><button id="sendMsg" type="submit" name="submit">Send Message</button></div>
           </form>
         </div>
 
