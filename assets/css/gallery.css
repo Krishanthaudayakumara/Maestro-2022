@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+	
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+text-align: center;
+font-family: cooper;
+}
+.horizontal:after{
+	content: "";
+	display: flex;
+	clear: both;
+}
+.vertical{
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.vertical img{
+	margin-top: 12px;
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(1);
+}
+img:hover{
+	width:102%;
+	border: 4px solid yellow;
+	border-radius:5px;
+	filter: grayscale(0);
+	transition: 0.5s;
+}
+@media(max-width: 720px){
+	.vertical{
+	width: 50%;
+	}
+}
+
