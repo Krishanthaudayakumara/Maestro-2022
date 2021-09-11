@@ -1900,7 +1900,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .flag {
-    background: rgb(255,255,255);
+    background: #040919;
     z-index: 15;
   }
 
@@ -2456,6 +2456,7 @@ testamonial */
 #contact-us {
   padding: 60px 0;
   background-color:white;
+  background-image: url("/assets/img/bg/cntctbg.png");
 }
 
 #contact-us h2{
