@@ -2237,9 +2237,10 @@ ul#countdown li .label {
   transform-style: preserve-3d;
 }
 
-.card:hover .content {
-  transform: rotateX( 180deg ) ;
+.card:hover .content:hover{
+  transform: rotateX(180deg) ;
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .front{
@@ -2266,7 +2267,7 @@ ul#countdown li .label {
 .back {
   background: #03446A;
   color: white;
-  transform: rotateX( 180deg );
+  transform: rotateX(180deg);
   font-size: 20px;
   padding: 20px;
 }
