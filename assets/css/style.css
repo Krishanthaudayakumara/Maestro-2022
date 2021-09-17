@@ -2245,6 +2245,13 @@ ul#countdown li .label {
   
 }
 
+/* .card:hover .content{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  } */
 
 
 .front{
@@ -2278,6 +2285,14 @@ ul#countdown li .label {
   font-size: 20px;
   padding: 20px;
 }
+
+.front, .back{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
 
 .div{
   /* padding-top:5px; */
