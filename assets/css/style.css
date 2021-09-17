@@ -1158,6 +1158,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #supporters .supporter-logo {
   padding: 30px;
+  
+  margin-bottom:20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1165,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #e0e5fa; */
   overflow: hidden;
   /* background: rgba(255, 255, 255, 0.5); */
-  height: 160px;
+  height: 300px;
 }
 
 #supporters .supporter-logo img {
@@ -1182,6 +1184,8 @@ h1, h2, h3, h4, h5, h6 {
 #supporters img {
   transition: all 0.4s ease-in-out;
 }
+
+
 
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -2245,13 +2249,6 @@ ul#countdown li .label {
   
 }
 
-/* .card:hover .content{
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  } */
 
 
 .front{
@@ -2285,14 +2282,6 @@ ul#countdown li .label {
   font-size: 20px;
   padding: 20px;
 }
-
-.front, .back{
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  }
 
 .div{
   /* padding-top:5px; */
@@ -2900,3 +2889,87 @@ testamonial */
 
 
 /* testimonial slider */
+
+
+
+/* test new */
+
+
+.testimonials
+{
+  padding: 40px 0;
+  
+  color: #434343;
+  text-align: center;
+}
+
+.testimonials p{
+  color:black;
+}
+
+.testimonial-inner
+{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.testimonials .border
+{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.testimonials .row
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonials .col
+{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing:  border-box;
+  padding: 15px;
+}
+
+.testimonials .testimonial
+{
+  background: #fff;
+  padding: 30px;
+  border-radius:15px;
+}
+
+.testimonials .testimonial img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonials .name
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.testimonials .stars
+{
+  color: #f0932b;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px)
+{
+  .testimonials .col
+  {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
