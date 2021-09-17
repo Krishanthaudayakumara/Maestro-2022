@@ -2029,11 +2029,11 @@ h1 {
   margin-left: 1em;
 }
 
-@media (min-width:600px)
+/* @media (min-width:600px)
   {
   display: flex;
   justify-content:space-between;
-}
+} */
 
 .horizontal-list-item {
   width: 100%;
@@ -2235,11 +2235,17 @@ ul#countdown li .label {
   transform-style: preserve-3d;
 }
 
-.card:hover .content:hover{
+.card:hover .content{
   transform: rotateX(180deg) ;
+  -webkit-transform: rotateX(180deg) ;
+  -ms-transform: rotateX(180deg) ;
+
   transition: transform 0.5s;
   cursor: pointer;
+  
 }
+
+
 
 .front{
   padding: 8px;
@@ -2266,6 +2272,9 @@ ul#countdown li .label {
   background: #03446A;
   color: white;
   transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg) ;
+  -ms-transform: rotateX(180deg) ;
+  
   font-size: 20px;
   padding: 20px;
 }
