@@ -1,11 +1,19 @@
 body{
     font-family: "Poppins", sans-serif;
+    background-color: #02071a;
 }
 .partners-section{
     width: 100%;
     height: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #060c22fb;
+}
+
+
+.headerx h1{
+    color:white !important;
+    opacity: 100%;
 }
 
 .card-part{
@@ -15,9 +23,10 @@ body{
 
 .card-col{
     margin: auto;
-    background-color: #101522;
+    background-color: #0b0449;
     height: 400px;
     border-radius: 20px;
+    border: 5px solid white;
 }
 
 .card-inner-columns{

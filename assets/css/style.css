@@ -692,12 +692,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   padding: 100px 0 100px 0;
+  text-align: center;
+  
 }
 
 .about-title{
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   font-size: 50px;
+  padding-bottom: 40px;
 }
 
 .about-desc{
@@ -1133,8 +1136,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   #gallery .swiper-slide-active {
     border: 5px solid #edbf7b;
-    padding: 5px;
-    background: #fff;
+    /* padding: 5px; */
+    background: #edbf7b;
     z-index: 1;
     transform: scale(1.4);
     margin-top: 6px;
@@ -1165,8 +1168,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 160px;
 }
 
+#supporters .supporter-logo img {
+  
+  border-radius: 10px;
+}
+
+
 #supporters .supporter-logo:hover img {
   transform: scale(1.2);
+  border-radius: 20px;
 }
 
 #supporters img {
@@ -1867,10 +1877,12 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   line-height: 1.5em;
   color: #060c22;
+  /* visibility: hidden; */
 }
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+  /* visibility:hidden; */
 }
 
 /* ================ Timeline Media Queries ================ */
@@ -2017,11 +2029,10 @@ h1 {
   margin-left: 1em;
 }
 
-@media (min-width:600px) {
-{
+@media (min-width:600px)
+  {
   display: flex;
   justify-content:space-between;
-}
 }
 
 .horizontal-list-item {
@@ -2851,3 +2862,17 @@ testamonial */
 /* ------testimonial  close-------*/
 
 
+.hideit{
+  visibility:hidden;
+}
+
+#footer .footer-top .footer-info p{
+  text-align: center;
+}
+
+.footer-info img{
+  margin-left: 30%;
+}
+
+
+/* testimonial slider */

@@ -33,6 +33,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -57,8 +58,8 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center ">
+   <!-- ======= Header ======= -->
+   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center lheader">
 
       <div id="logo" class="me-auto">
@@ -105,6 +106,7 @@
     </div>
   </header><!-- End Header -->
 
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
@@ -113,7 +115,7 @@
       <h1 class="mb-4 pb-0">Maestro 2021</h1>
 
 
-      <p class="mb-4 pb-0">Explore the enreprenure in you</p>
+      <p class="mb-4 pb-0" style="font-size:1.5em;">" Explore the enreprenure in you "</p>
 <!--      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>-->
       <a href="#about" class="about-btn scrollto">Register Now</a>
 
@@ -130,13 +132,14 @@
           <div class="col-lg-12">
             <h2 class="about-title">About The Event</h2>
             <p class="about-desc">
-              MAESTRO is a <b> Business Case Study Competition</b> organised by Rotaract Club of 
-                University of Moratuwa  Sri Lanka in collabaration with McKinsey and Company. 
-                MAESTRO 2021 unveiling for the 4th consecutive year, opens the door for <b> 
+              MAESTRO is a <b> Business Case Study Competition</b> organised by<b> Rotaract Club of 
+                University of Moratuwa</b>  Sri Lanka in collabaration with McKinsey and Company. 
+                MAESTRO 2021 unveiling for the <b>4th consecutive year</b>, opens the door for <b> 
                   undergraduates and Rotaractors around the world</b> to address a pressing business issue faced
                    by a real-world corporate entity. MAESTRO 2021 delivered entirely through a <b>
                 fully digital environment,</b> is your chance to explore the entrepreneurial professional 
                 within yourself.
+              <br>
               <br>
               Join us to get exposed to leading industry experts and showcase the future you!       </p>
           </div>
@@ -477,12 +480,16 @@
             <div class="number">00</div>
             <div class="label">Minutes</div>
           </li>
-          <li id="seconds">
+          
+          <!-- <li id="seconds">
             <div class="number">00</div>
             <div class="label">Seconds</div>
-          </li>
+          </li> -->
         </ul>
-        <h6 style="text-align: center;margin-bottom: 60px; margin-top: -20px">until registration starts</h6>
+        <span><h2 style="text-align: center;margin-bottom: 60px; margin-top: -20px; color:#052D4F; font-weight: bold;">Until registration starts</h2>
+        </span>
+        
+        <h6 style="text-align: center;margin-bottom: 60px; margin-top: -20px">Until registration starts</h6>
 
         <!-- The Timeline -->
         <ul class="timeline">
@@ -494,18 +501,18 @@
                 <span class="flag">Open Registration</span>
                 <span class="time-wrapper"><span class="time">21<sup>st</sup> of July</span></span>
               </div>
-              <div class="desc">Registration will be opening soon! <a href="/register.html">Register Now</a></div>
+              <div class="desc">Registration will be opening soon! </div><div class = "desc  hideit"><a href="/register.html">Register Now</a></div>
             </div>
           </li>
 
           <!-- Item 2 -->
           <li>
-            <div class="direction-l special-timeline" style="">
+            <div class="direction-l special-timeline">
               <div class="flag-wrapper">
                 <span class="flag">End Registration </span>
                 <span class="time-wrapper"><span class="time">2<sup>nd</sup> of August</span></span>
               </div>
-              <div class="desc">Registration period ended!</div>
+              <div class="desc hideit">Registration period ended!</div>
             </div>
           </li>
 
@@ -516,7 +523,7 @@
                 <span class="flag">Launch Case Study</span>
                 <span class="time-wrapper"><span class="time">2<sup>nd</sup> of August</span></span>
               </div>
-              <div class="desc">Will be made available later. <a href="#">Access Case Study</a></div>
+              <div class="desc">Will be made available later. </div> <div class="desc  hideit"><a href="#">Access Case Study</a></div>
             </div>
           </li>
 
@@ -527,7 +534,7 @@
                 <span class="flag">Case Submission</span>
                 <span class="time-wrapper"><span class="time">2<sup>nd</sup> - 15<sup>th</sup> of August</span></span>
               </div>
-              <div class="desc">Await till we release the case! <a href="#">Submit Here</a></div>
+              <div class="desc">Await till we release the case! <a href="#" class="hideit">Submit Here</a></div>
             </div>
           </li>
 
@@ -981,12 +988,12 @@
           </div>
           <div class="wrapper">
             <div class="link_wrapper">
-              <a href="#">Click Here To Download The Competition Guidelines!</a>
-              <div class="icon">
+              <a href="Guidlines.pdf">Click Here To Download The Competition Guidelines!</a>
+              <!-- <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
                   <path
                     d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-                </svg>
+                </svg> -->
               </div>
             </div>
 
@@ -1046,6 +1053,7 @@
       <!-- End Gallery Section -->
 
       <!-- Testamonial -->
+      
        
 
       <div class="testimonials-clean">
@@ -1096,6 +1104,11 @@
 
 
       <!-- testamonialnew -->
+
+
+      
+
+      
 
 
 
@@ -1388,13 +1401,13 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6">
               <div class="supporter-logo">
-                <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+                <img src="assets/img/supporters/peoples-logo.png" class="img-fluid" alt="">
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6">
               <div class="supporter-logo">
-                <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+                <img src="https://rainbowpages.lk/uploads/listings/logo/c/comba_1c.jpg" class="img-fluid" alt="">
               </div>
             </div>
 
@@ -1629,7 +1642,8 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <img alt="Rotaract Club of University of Moratuwa" src="assets/img/Logo_2.png">
+            <a href="https://rotaractmora.org/">
+            <img alt="Rotaract Club of University of Moratuwa" src="assets/img/Logo_2.png"></a>
             <p>
               Rotaract Mora is about serving our kind and the living as a whole,
               exploring new territory, creating opportunities, and building future
