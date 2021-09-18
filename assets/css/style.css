@@ -716,7 +716,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(6, 9, 19, 0.753);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -2186,7 +2186,6 @@ ul#countdown {
   padding: 15px 0 20px 0;
   color: #052d4f;
   overflow: hidden;
-  font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
 }
 ul#countdown li {
@@ -2380,13 +2379,13 @@ ul#countdown li .label {
 /*
 testamonial */
 
-.testimonials-clean {
+/* .testimonials-clean {
   color:white;
   background-color:#040919;
 }
 
 .testimonials-clean p {
-  color:#7d8285;
+  color:#e6e6e6;
 }
 
 .testimonials-clean h2 {
@@ -2473,7 +2472,7 @@ testamonial */
   float:left;
   margin-right:12px;
   margin-top:-5px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -2481,8 +2480,8 @@ testamonial */
 #contact-us {
   padding: 60px 0;
   background-color:white;
-  background-image: url("/assets/img/bg/cntctbg.png");
-  -webkit-background-size: cover;
+  background-image: url("/assets/img/bg/bg_timeline.png");
+   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -2977,3 +2976,31 @@ testamonial */
     max-width: 80%;
   }
 }
+
+/* 
+why maestro sec2 */
+
+.middlewm{
+  text-align: center;
+}
+
+.middlewm i {
+  font-size:50px!important;
+  text-align: center !important;
+  position: relative !important;
+  margin-right: 20px !important;
+  
+}
+
+.middlewm .question{
+    font-size:30px !important;
+    line-height:110% !important;
+}
+
+.middlewm li {
+  border: 1px solid white !important;
+  margin-bottom: 10px !important;
+  border-radius: 12px;
+  padding:10px !important;
+}
+/* end sec 2 */
