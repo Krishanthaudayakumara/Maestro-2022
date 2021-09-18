@@ -2482,6 +2482,10 @@ testamonial */
   padding: 60px 0;
   background-color:white;
   background-image: url("/assets/img/bg/cntctbg.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #contact-us h2{
