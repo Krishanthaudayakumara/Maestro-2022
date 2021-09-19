@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #060c22;
 }
 .section-with-bg-timeline {
-  background-image: url("../img/bg/bg_timeline.png");
+  background-image: url("../img/bg/bg_timeline.png"); 
   background-size: cover;
   background-position: center;
   background-color: #060c22;
@@ -491,6 +491,52 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.first-btnsx{
+  float: left;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 280px !important;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.first-btnsy{
+  float: left;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 280px !important;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.first-btnsy:hover, .first-btnsx:hover{
+  background-color:#040919;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .first-btnsx{
+    
+    margin-top: 350px;
+    margin-left: 0px !important;
+    padding: 10px 20px 10px 20px;
+   
+  }
+  
+  .first-btnsy{
+   
+    margin-top: 220px;
+    margin-right: 0px !important;
+    padding: 10px 20px 10px 20px;
+  
+  }
+  
+}
+
+
+
 .hero-video{
   position: fixed;
   min-height: 100vh;
@@ -500,12 +546,48 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -5;
 }
 
+@media only screen and (max-width: 600px) {
+  .hero-video {
+    visibility: hidden;
+  }
+    #hero{
+      background: linear-gradient(0deg, rgba(14, 2, 48, 0.918), rgba(0, 2, 12, 0.651)),url("../img/pricing-free.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+      height:70vh;
+    
+    }
+    #hero:before {
+      background: rgba(6, 9, 19, 0.856);
+    }
+
+    #hero .hideit {
+      visibility:visible !important;
+    }
+
+    #hero .about-btn{
+      margin: 50px auto 0 !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px){
+  #hero{
+    height:100vh;
+  }
+}
+
+
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
+
+
 
 #hero:before {
   content: "";
@@ -648,7 +730,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
-  margin: 50px auto 0;
+  margin: 150px auto 0;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
@@ -1165,9 +1247,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #supporters .supporter-logo {
-  padding: 30px;
+  padding: 0px 30px 0px 30px;
   
-  margin-bottom:20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1180,9 +1261,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 600px) {
   #supporters .supporter-logo {
-    
+    margin-bottom:20px;
     padding:0px;
     height: 200px;
+  }
+
+  #supporters .supporter-logo img{
+    max-width: 250px;
   }
 }
 
@@ -1244,6 +1329,7 @@ h1, h2, h3, h4, h5, h6 {
 #faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
+  font-weight: 260px;
 }
 
 #faq .faq-list .icon-show {
@@ -2110,7 +2196,7 @@ h1 {
 
 #guidlines p{
   text-align: center;
-  font-weight: 500;
+  font-weight: 260px;
   font-size: 1.2em;
   margin-top: -30px;
 }
@@ -2180,12 +2266,21 @@ h1 {
 }
 
 .link_wrapper a:hover{
+ 
+  background: #edbf7b;
+ 
+  border: 12px solid #edbf7b;
+ 
+}
+
+/* .link_wrapper a:hover{
   width: 350px;
+  height: 70px;
   border: 3px solid #edbf7b;
   background: transparent;
   color: #edbf7b;
   padding-top: 5px;
-}
+} */
 
 .link_wrapper a:hover + .icon{
   border: 3px solid #edbf7b;
@@ -2963,6 +3058,12 @@ testamonial */
   padding: 30px;
   border-radius:15px;
 }
+@media(max-width:500px) {
+  .testimonials .testimonial{
+    margin-left:-14%;
+    margin-right:-14%;
+  }
+}
 
 .testimonials .testimonial img
 {
@@ -3013,10 +3114,98 @@ why maestro sec2 */
     line-height:110% !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .middlewm .question{
+    font-size:20px !important;
+  }
+}
+
+
 .middlewm li {
   border: 1px solid white !important;
   margin-bottom: 10px !important;
   border-radius: 12px;
   padding:10px !important;
 }
+
+.middlewm{
+  font-weight: 260px;
+}
 /* end sec 2 */
+.button-nxt{
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: auto;
+  width:250px;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+.button-nxt:hover{
+  border: 2px solid #052d4f;
+  background-color: #052d4f;
+  transition:0.2s;
+  cursor: pointer;
+}
+
+.button-nxt a:hover{
+  color:white;
+}
+
+/* modal */
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        color: black !important;;
+      }
+      .modal-content p{
+          color:black !important;
+          margin-left: auto;
+          margin-right: auto;
+
+      }
+      /* The Close Button */
+      .close {
+        color: #292323;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        padding-left: 96%;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .timeline-link{
+        cursor: pointer;
+      }
+
+      #myBtn{
+        cursor: pointer;
+      }
