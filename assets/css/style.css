@@ -805,7 +805,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about:before {
   content: "";
-  background: rgba(6, 9, 19, 0.753);
+  background: rgba(6, 15, 19, 0.753);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1992,11 +1992,15 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:600px){
   .desc{
     border-radius:15px;
-    background: #02144e9a !important;
+    background: #021657 !important;
   }
 
   .time-wrapper{
     margin-top:30px;
+  }
+
+  .timeline-link{
+    font-weight: bold;
   }
 }
 
