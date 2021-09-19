@@ -692,12 +692,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   padding: 100px 0 100px 0;
+  text-align: center;
+  
 }
+
+@media only screen and (max-width: 600px) {
+  #about {
+    background-position: center;
+
+    }
+}
+
 
 .about-title{
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   font-size: 50px;
+  padding-bottom: 40px;
 }
 
 .about-desc{
@@ -713,7 +724,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(6, 9, 19, 0.753);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1133,8 +1144,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   #gallery .swiper-slide-active {
     border: 5px solid #edbf7b;
-    padding: 5px;
-    background: #fff;
+    /* padding: 5px; */
+    background: #edbf7b;
     z-index: 1;
     transform: scale(1.4);
     margin-top: 6px;
@@ -1155,6 +1166,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #supporters .supporter-logo {
   padding: 30px;
+  
+  margin-bottom:20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1162,16 +1175,33 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #e0e5fa; */
   overflow: hidden;
   /* background: rgba(255, 255, 255, 0.5); */
-  height: 160px;
+  height: 300px;
 }
+
+@media only screen and (max-width: 600px) {
+  #supporters .supporter-logo {
+    
+    padding:0px;
+    height: 200px;
+  }
+}
+
+#supporters .supporter-logo img {
+  
+  border-radius: 10px;
+}
+
 
 #supporters .supporter-logo:hover img {
   transform: scale(1.2);
+  border-radius: 20px;
 }
 
 #supporters img {
   transition: all 0.4s ease-in-out;
 }
+
+
 
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -1867,10 +1897,12 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   line-height: 1.5em;
   color: #060c22;
+  /* visibility: hidden; */
 }
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+  /* visibility:hidden; */
 }
 
 /* ================ Timeline Media Queries ================ */
@@ -1900,7 +1932,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .flag {
-    background: rgb(255,255,255);
+    background: #040919;
     z-index: 15;
   }
 
@@ -2017,12 +2049,11 @@ h1 {
   margin-left: 1em;
 }
 
-@media (min-width:600px) {
-{
+/* @media (min-width:600px)
+  {
   display: flex;
   justify-content:space-between;
-}
-}
+} */
 
 .horizontal-list-item {
   width: 100%;
@@ -2171,7 +2202,6 @@ ul#countdown {
   padding: 15px 0 20px 0;
   color: #052d4f;
   overflow: hidden;
-  font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
 }
 ul#countdown li {
@@ -2224,10 +2254,17 @@ ul#countdown li .label {
   transform-style: preserve-3d;
 }
 
-.card:hover .content {
-  transform: rotateX( 180deg ) ;
+.card:hover .content{
+  transform: rotateX(180deg) ;
+  -webkit-transform: rotateX(180deg) ;
+  -ms-transform: rotateX(180deg) ;
+
   transition: transform 0.5s;
+  cursor: pointer;
+  
 }
+
+
 
 .front{
   padding: 8px;
@@ -2253,7 +2290,10 @@ ul#countdown li .label {
 .back {
   background: #03446A;
   color: white;
-  transform: rotateX( 180deg );
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg) ;
+  -ms-transform: rotateX(180deg) ;
+  
   font-size: 20px;
   padding: 20px;
 }
@@ -2355,13 +2395,13 @@ ul#countdown li .label {
 /*
 testamonial */
 
-.testimonials-clean {
+/* .testimonials-clean {
   color:white;
   background-color:#040919;
 }
 
 .testimonials-clean p {
-  color:#7d8285;
+  color:#e6e6e6;
 }
 
 .testimonials-clean h2 {
@@ -2448,7 +2488,7 @@ testamonial */
   float:left;
   margin-right:12px;
   margin-top:-5px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -2456,6 +2496,11 @@ testamonial */
 #contact-us {
   padding: 60px 0;
   background-color:white;
+  background-image: url("/assets/img/bg/bg_timeline.png");
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #contact-us h2{
@@ -2848,3 +2893,130 @@ testamonial */
 }
 /* ------testimonial  close-------*/
 
+
+.hideit{
+  visibility:hidden;
+}
+
+#footer .footer-top .footer-info p{
+  text-align: center;
+}
+
+.footer-info img{
+  margin-left: 30%;
+}
+
+
+/* testimonial slider */
+
+
+
+/* test new */
+
+
+.testimonials
+{
+  padding: 40px 0;
+  
+  color: #434343;
+  text-align: center;
+}
+
+.testimonials p{
+  color:black;
+}
+
+.testimonial-inner
+{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.testimonials .border
+{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.testimonials .row
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonials .col
+{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing:  border-box;
+  padding: 15px;
+}
+
+.testimonials .testimonial
+{
+  background: #fff;
+  padding: 30px;
+  border-radius:15px;
+}
+
+.testimonials .testimonial img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonials .name
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.testimonials .stars
+{
+  color: #f0932b;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px)
+{
+  .testimonials .col
+  {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+/* 
+why maestro sec2 */
+
+.middlewm{
+  text-align: center;
+}
+
+.middlewm i {
+  font-size:50px!important;
+  text-align: center !important;
+  position: relative !important;
+  margin-right: 20px !important;
+  
+}
+
+.middlewm .question{
+    font-size:30px !important;
+    line-height:110% !important;
+}
+
+.middlewm li {
+  border: 1px solid white !important;
+  margin-bottom: 10px !important;
+  border-radius: 12px;
+  padding:10px !important;
+}
+/* end sec 2 */
