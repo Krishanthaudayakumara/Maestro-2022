@@ -491,47 +491,38 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.first-btnsx{
+.firstbtns{
+  display:flex;
+  align-items:center;
+}
+
+.first-btns{
   float: left;
-  position: absolute;
-  margin-top: 300px;
-  margin-left: 280px !important;
+  position: relative;
   padding: 10px 30px 10px 30px;
   border: 2px solid white;
   border-radius: 50px;
+  margin: 10px;
 }
 
-.first-btnsy{
-  float: left;
-  position: absolute;
-  margin-top: 300px;
-  margin-right: 280px !important;
-  padding: 10px 30px 10px 30px;
-  border: 2px solid white;
-  border-radius: 50px;
-}
-
-.first-btnsy:hover, .first-btnsx:hover{
+.first-btns:hover{
   background-color:#040919;
   color: white;
 }
 
 @media only screen and (max-width: 600px) {
-  .first-btnsx{
+  
+    .firstbtns{
+      display:contents;
+      align-items:center;
+    }
     
-    margin-top: 350px;
-    margin-left: 0px !important;
-    padding: 10px 20px 10px 20px;
+    .first-btns{
+      margin: 0px;
+    }
    
-  }
-  
-  .first-btnsy{
-   
-    margin-top: 220px;
-    margin-right: 0px !important;
-    padding: 10px 20px 10px 20px;
-  
-  }
+
+
   
 }
 
