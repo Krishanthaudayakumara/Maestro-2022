@@ -158,10 +158,18 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #060c22;
 }
 .section-with-bg-timeline {
-  background-image: url("../img/bg/bg_timeline.png"); 
+  background-image: url("../img/bg/bg_timeline.png" ); 
   background-size: cover;
   background-position: center;
   background-color: #060c22;
+}
+
+@media(max-width:600px) {
+  .section-with-bg-timeline{
+    background-position:left;
+    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.753), rgba(245, 241, 255, 0.555)),url("../img/bg/bg_timeline.png" );
+    
+  }
 }
 
 /*--------------------------------------------------------------
@@ -935,6 +943,10 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #schedule {
   padding: 60px 0 60px 0;
+}
+
+#schedule .section-header p {
+  color:#051f47e1;
 }
 
 #schedule .nav-tabs {
@@ -1977,6 +1989,17 @@ h1, h2, h3, h4, h5, h6 {
   /* visibility: hidden; */
 }
 
+@media(max-width:600px){
+  .desc{
+    border-radius:15px;
+    background: #02144e9a !important;
+  }
+
+  .time-wrapper{
+    margin-top:30px;
+  }
+}
+
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
   /* visibility:hidden; */
@@ -2299,7 +2322,7 @@ ul#countdown li {
   text-align: center;
 }
 ul#countdown li .label {
-  color: #adafb2;
+  color: #051f47;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -3069,6 +3092,16 @@ testamonial */
   text-transform: uppercase;
   margin: 20px 0;
 }
+
+.testimonials .name p
+{
+  font-size: 15px;
+  text-transform:none;
+  margin:0px;
+  color: rgba(51, 50, 50, 0.993);
+}
+
+
 
 .testimonials .stars
 {
