@@ -80,7 +80,7 @@ subButton.addEventListener("click",ev =>{
             document.querySelector('.sent-message').style.display = 'block';
             document.getElementById('registration-form').reset();
             setTimeout(function(){
-                window.location.href = '../../../Maestro_temp/index.html';
+                window.location.href = '../../../index.html';
             }, 5000);
 
         }).catch((error) => {
