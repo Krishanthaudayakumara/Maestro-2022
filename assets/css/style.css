@@ -1817,7 +1817,7 @@ h1, h2, h3, h4, h5, h6 {
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: linear-gradient(to bottom, rgba(5, 45, 79, 0) 0%, rgb(5, 45, 79) 8%, rgb(5, 45, 79) 92%, rgba(80, 80, 80, 0) 100%);
 
-  z-index: 5;
+  z-index: 0;
 }
 
 .timeline li {
