@@ -1883,12 +1883,16 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 
   text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+    background-color: #040919;
+    border-radius: 25px;
 }
 
 .flag {
   position: relative;
   display: inline;
-  background:#060c22;
+ 
   padding: 6px 10px;
   border-radius: 5px;
   font-size: 25px;
@@ -1957,21 +1961,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .time-wrapper {
-  display: inline;
+  /* display: inline; */
   font-size: 15px;
   font-weight: 600;
   line-height: 1em;
   color: rgb(237, 191, 123);
   vertical-align: middle;
+  margin: 10px;
 }
 
-.direction-l .time-wrapper {
+/* .direction-l .time-wrapper {
   float: left;
 }
 
 .direction-r .time-wrapper {
   float: right;
-}
+} */
 
 .time {
   display: inline-block;
@@ -1992,7 +1997,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:600px){
   .desc{
     border-radius:15px;
-    background: #021657 !important;
+    background: transparent !important;
   }
 
   .time-wrapper{
@@ -2026,6 +2031,9 @@ h1, h2, h3, h4, h5, h6 {
   .direction-r {
     float: none;
     width: 100%;
+    background-color: #040919;
+    border-radius: 25px;
+    padding-bottom: 10px;
 
     text-align: center;
   }
@@ -2033,10 +2041,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .flag-wrapper {
     text-align: center;
+    
   }
 
   .flag {
-    background: #040919;
+  
     z-index: 15;
   }
 
@@ -2088,8 +2097,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .desc {
     position: relative;
-    margin: 1em 0 0 0;
-    padding: 1em;
+    
+    
     background: rgb(245,245,245);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
@@ -2101,8 +2110,7 @@ h1, h2, h3, h4, h5, h6 {
   .direction-l .desc,
   .direction-r .desc {
     position: relative;
-    margin: 1em 1em 0 1em;
-    padding: 1em;
+    
 
     z-index: 15;
   }
@@ -2113,7 +2121,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .direction-l .desc,
   .direction-r .desc {
-    margin: 1em 4em 0 4em;
+    margin: 0em 4em 0 4em;
   }
 
 }
@@ -3105,6 +3113,12 @@ testamonial */
   color: rgba(51, 50, 50, 0.993);
 }
 
+@media (min-width: 768px) {
+  div.testimonial.short{
+    padding-bottom: 75px!important;
+  }
+}
+
 
 
 .testimonials .stars
@@ -3118,7 +3132,7 @@ testamonial */
   .testimonials .col
   {
     flex: 100%;
-    max-width: 80%;
+    max-width: 82%;
   }
 }
 
