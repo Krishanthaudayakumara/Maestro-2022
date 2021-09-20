@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #edbf7b;
+  color: #eea12e;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #060c22;
 }
 .section-with-bg-timeline {
-  background-image: url("../img/bg/bg_timeline.jpg" ); 
+  background-image: linear-gradient(50deg, rgba(12, 3, 48, 0.171), rgba(255, 255, 255, 0.178)),url("../img/bg/bg_timeline.jpg" ); 
   background-size: cover;
   background-position: center;
   background-color: #060c22;
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .firstbtns{
-  display:flex;
+  display:grid;
   align-items:center;
 }
 
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .first-btns{
-      margin: 0px;
+      margin: 10px;
     }
    
 
@@ -2987,7 +2987,11 @@ ul#countdown li .label {
 
 @media (min-width: 768px) {
   div.testimonial.short{
-    padding-bottom: 75px!important;
+    padding-bottom: 75px;
+  }
+
+  div.testimonial.short.saseni{
+    padding-bottom: 52px!important;
   }
 }
 
