@@ -5,7 +5,7 @@ body{
 .partners-section{
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 1px;
     padding-bottom: 100px;
     background-color: #060c22fb;
 }
@@ -52,6 +52,22 @@ iframe{
     margin-top: 50px;
     color: #edbf7b;
 }
+
+@media(max-width:600px){
+    .card-desc-part h3{
+        font-size:14px;
+        
+    }
+}
+
+#supporters .supporters-wrap {
+    margin-bottom: 0px;
+}
+
+#supporters{
+    padding-bottom: 0px;
+}
+
 .card-title-part{
     margin-top: 10px;
     font-size: 32px;
@@ -63,6 +79,7 @@ iframe{
     font-weight: 200;
     color: white;
 }
+
 
 @media (max-width: 992px) {
     iframe{

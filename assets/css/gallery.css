@@ -78,9 +78,9 @@ body{
 		
 	}
 
-	.footer-top{
-		visibility: hidden;
-	}
+	.footer-top .row{
+		width: 100%;
+	} 
 }
 
 div.header{
