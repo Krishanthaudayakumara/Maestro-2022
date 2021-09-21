@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-with-bg {
-  background-color: #060c22;
+  background-color: #040919;
 }
 .section-with-bg-timeline {
   background-image: linear-gradient(50deg, rgba(12, 3, 48, 0.171), rgba(255, 255, 255, 0.178)),url("../img/bg/bg_timeline.jpg" ); 
@@ -1301,6 +1301,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
   font-weight: 260px;
+  color:white;
 }
 
 #faq .faq-list .icon-show {
@@ -2494,6 +2495,7 @@ ul#countdown li .label {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-radius: 25px;
 }
 
 #contact-us h2{
