@@ -62,10 +62,14 @@ iframe{
 
 #supporters .supporters-wrap {
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #supporters{
     padding-bottom: 0px;
+    
 }
 
 .card-title-part{

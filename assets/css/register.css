@@ -196,8 +196,8 @@ h2{
 }
 
 .pricing img {
- 
-  
+  width: 320px;
+  height: 200px;
 }
 
 .pricing ul {
@@ -223,18 +223,18 @@ h2{
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: #4154f1;
+  color: #0b0f36;
   transition: none;
   font-size: 16px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 1px solid #4154f1;
+  border: 1px solid #050827;
 }
 
 .pricing .btn-buy:hover {
-  background: #4154f1;
+  background: #040833;
   color: #fff;
 }
 
