@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
   }
     #hero{
-      background: linear-gradient(-22deg, rgba(14, 2, 48, 0.11), rgba(0, 2, 12, 0.075)),url("../img/bg/mob-background.png");
+      background: url("../img/bg/mob-background.png");
       background-repeat: no-repeat;
       background-size:contain;
       background-position: center;
