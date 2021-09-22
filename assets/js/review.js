@@ -18,11 +18,28 @@ const db2 = firestore.collection("messages")
 //get registration forms
 db.get().then((results) =>{
     results.forEach((doc) =>{
-        createCard(doc.data().team_name,doc.data().institute,doc.data().members,doc.data().mem_1_name,
-            doc.data().mem_1_age,doc.data().mem_1_email,doc.data().mem_1_phone,doc.data().mem_2_name,
-            doc.data().mem_2_age,doc.data().mem_2_email,doc.data().mem_2_phone,doc.data().mem_3_name,
-            doc.data().mem_3_age,doc.data().mem_3_email,doc.data().mem_3_phone,doc.data().mem_4_name,
-            doc.data().mem_4_age,doc.data().mem_4_email,doc.data().mem_4_phone,)
+        createCard(doc.data().team_name,
+            doc.data().members,
+            doc.data().mem_1_name,
+            doc.data().mem_1_age,
+            doc.data().mem_1_email,
+            doc.data().mem_1_phone,
+            doc.data().mem_1_inst,
+            doc.data().mem_2_name,
+            doc.data().mem_2_age,
+            doc.data().mem_2_email,
+            doc.data().mem_2_phone,
+            doc.data().mem_2_inst,
+            doc.data().mem_3_name,
+            doc.data().mem_3_age,
+            doc.data().mem_3_email,
+            doc.data().mem_3_phone,
+            doc.data().mem_3_inst,
+            doc.data().mem_4_name,
+            doc.data().mem_4_age,
+            doc.data().mem_4_email,
+            doc.data().mem_4_phone,
+            doc.data().mem_4_inst)
     })
 })
 
@@ -34,10 +51,10 @@ db2.get().then((results) =>{
 })
 
 
-function createCard(teamName, institute, members, mem1name, mem1age, mem1email, mem1mob,
-                    mem2name, mem2age, mem2email, mem2mob,
-                    mem3name, mem3age, mem3email, mem3mob,
-                    mem4name, mem4age, mem4email, mem4mob,) {
+function createCard(teamName, members, mem1name, mem1age, mem1email, mem1mob,mem1inst,
+                    mem2name, mem2age, mem2email, mem2mob,mem2inst,
+                    mem3name, mem3age, mem3email, mem3mob,mem3inst,
+                    mem4name, mem4age, mem4email, mem4mob,mem4inst) {
  var card = document.createElement('div')
     card.innerHTML = `
 <div class="card">
@@ -52,7 +69,7 @@ function createCard(teamName, institute, members, mem1name, mem1age, mem1email, 
                         <h3>Basic info</h3>
                         <div class="row details-row">
                             <div class="col-sm"><strong>Team name :</strong> ${teamName}</div>
-                            <div class="col-sm"><strong>Institute :</strong> ${institute}</div>
+                           
                             <div class="col-sm"><strong>No. of team members :</strong> ${members}</div>
                         </div>
 
@@ -62,6 +79,8 @@ function createCard(teamName, institute, members, mem1name, mem1age, mem1email, 
                             <div class="col-sm"><strong>Age :</strong> ${mem1age}</div>
                             <div class="col-sm"><strong>Email :</strong> ${mem1email}</div>
                             <div class="col-sm"><strong>Mobile number :</strong> ${mem1mob}</div>
+                                                        <div class="col-sm"><strong>Institute :</strong> ${mem1inst}</div>
+
                         </div>
 
                         <h5>Team member 2</h5>
@@ -70,6 +89,8 @@ function createCard(teamName, institute, members, mem1name, mem1age, mem1email, 
                             <div class="col-sm"><strong>Age :</strong> ${mem2age}</div>
                             <div class="col-sm"><strong>Email :</strong> ${mem2email}</div>
                             <div class="col-sm"><strong>Mobile number :</strong> ${mem2mob}</div>
+                                                        <div class="col-sm"><strong>Institute :</strong> ${mem2inst}</div>
+
                         </div>
 
                         <h5>Team member 3</h5>
@@ -78,6 +99,8 @@ function createCard(teamName, institute, members, mem1name, mem1age, mem1email, 
                             <div class="col-sm"><strong>Age :</strong> ${mem3age}</div>
                             <div class="col-sm"><strong>Email :</strong> ${mem3email}</div>
                             <div class="col-sm"><strong>Mobile number :</strong> ${mem3mob}</div>
+                                                        <div class="col-sm"><strong>Institute :</strong> ${mem3inst}</div>
+
                         </div>
 
                         <h5>Team member 4</h5>
@@ -86,6 +109,8 @@ function createCard(teamName, institute, members, mem1name, mem1age, mem1email, 
                             <div class="col-sm"><strong>Age :</strong> ${mem4age}</div>
                             <div class="col-sm"><strong>Email :</strong> ${mem4email}</div>
                             <div class="col-sm"><strong>Mobile number :</strong> ${mem4mob}</div>
+                                                        <div class="col-sm"><strong>Institute :</strong> ${mem4inst}</div>
+
                         </div>
                     </div>
                 </div>
