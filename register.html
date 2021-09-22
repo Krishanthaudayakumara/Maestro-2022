@@ -15,12 +15,12 @@
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+            rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -37,7 +37,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144825636-7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-144825636-7');
@@ -47,54 +51,51 @@
 
 <body class="registration-form-body">
 
-    <header class="d-flex align-items-center " id="header">
-        <div class="container-fluid container-xxl d-flex align-items-center lheader">
+<header class="d-flex align-items-center " id="header">
+    <div class="container-fluid container-xxl d-flex align-items-center lheader">
 
-            <div class="me-auto" id="logo">
-                <!-- Uncomment below if you prefer to use a text logo -->
-                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-                <a class="scrollto" href="index.html"><img alt="" class="logo" src="assets\img\Maestro 2020 logo.png"
-                        title=""></a>
+        <div class="me-auto" id="logo">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+            <a class="scrollto" href="index.html"><img alt="" class="logo" src="assets\img\Maestro 2020 logo.png"
+                                                       title=""></a>
+        </div>
+
+
+        <a class="buy-tickets scrollto" href="index.html">Go Back</a>
+
+    </div>
+</header><!-- End Header -->
+
+
+<main class="reg-blue">
+
+    <!-- ======= Registration Section ======= -->
+    <section class="reg-blue section-bg" id="conts-us" style="margin-top: 100px">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header reg-blue">
+                <h2>Registration Form</h2>
             </div>
 
-         
-            <a class="buy-tickets scrollto" href="index.html">Go Back</a>
 
-        </div>
-    </header><!-- End Header -->
-
-
-    <main class = "reg-blue">
-
-        <!-- ======= Registration Section ======= -->
-        <section class="reg-blue section-bg" id="conts-us" style="margin-top: 100px">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header reg-blue">
-                    <h2>Registration Form</h2>
-                </div>
-
-
-                <div class="form">
-                    <form action="javascript:checkValidity()" class="php-email-form" id="registration-form"
-                        method="post" role="form">
-                        <h4 class="registration-form-label registration-form-member">Team information</h4>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Name of the University / Educational Institute /
-                                    Rotaract Club<sup>*</sup></h6>
-                                <input class="form-control" id="institute-name" name="institute-name"
-                                    placeholder="University / Educational Institute / Rotaract Club" required
-                                    type="text">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Team name<sup>*</sup></h6>
-                                <input class="form-control" id="team-name" name="team-name" placeholder="Team name"
-                                    required type="text">
-                            </div>
+            <div class="form">
+                <form action="javascript:checkValidity()" class="php-email-form" id="registration-form"
+                      method="post" role="form">
+                    <h4 class="registration-form-label registration-form-member">Team information</h4>
+                    <div class="row registration-form-row">
+                        <div class="form-gr oup col-md-6">
+                            <!--                                <h6 class="registration-form-label">Name of the University / Educational Institute /-->
+                            <!--                                    Rotaract Club<sup>*</sup></h6>-->
+                            <!--                                <input class="form-control" id="institute-name" name="institute-name"-->
+                            <!--                                    placeholder="University / Educational Institute / Rotaract Club" required-->
+                            <!--                                    type="text">-->
+                            <h6 class="registration-form-label">Team name<sup>*</sup></h6>
+                            <input class="form-control" id="team-name" name="team-name" placeholder="Team name"
+                                   required type="text">
                         </div>
-                        <div class="row registration-form-row">
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
                             <div class="form-group col-md-6">
                                 <h6 class="registration-form-label">Number of team members<sup>*</sup></h6>
                                 <!--                            <input class="form-control" id="team-count" name="team-count" placeholder="Number of team members" required-->
@@ -104,475 +105,516 @@
                                     <option selected value="4">Four</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Country<sup>*</sup></h6>
-                                <select aria-label="Default select example" class="form-select" id="country" name="country">
-                                    <option value="Afganistan">Afghanistan</option>
-                                    <option value="Albania">Albania</option>
-                                    <option value="Algeria">Algeria</option>
-                                    <option value="American Samoa">American Samoa</option>
-                                    <option value="Andorra">Andorra</option>
-                                    <option value="Angola">Angola</option>
-                                    <option value="Anguilla">Anguilla</option>
-                                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Armenia">Armenia</option>
-                                    <option value="Aruba">Aruba</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Austria">Austria</option>
-                                    <option value="Azerbaijan">Azerbaijan</option>
-                                    <option value="Bahamas">Bahamas</option>
-                                    <option value="Bahrain">Bahrain</option>
-                                    <option value="Bangladesh">Bangladesh</option>
-                                    <option value="Barbados">Barbados</option>
-                                    <option value="Belarus">Belarus</option>
-                                    <option value="Belgium">Belgium</option>
-                                    <option value="Belize">Belize</option>
-                                    <option value="Benin">Benin</option>
-                                    <option value="Bermuda">Bermuda</option>
-                                    <option value="Bhutan">Bhutan</option>
-                                    <option value="Bolivia">Bolivia</option>
-                                    <option value="Bonaire">Bonaire</option>
-                                    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
-                                    <option value="Botswana">Botswana</option>
-                                    <option value="Brazil">Brazil</option>
-                                    <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
-                                    <option value="Brunei">Brunei</option>
-                                    <option value="Bulgaria">Bulgaria</option>
-                                    <option value="Burkina Faso">Burkina Faso</option>
-                                    <option value="Burundi">Burundi</option>
-                                    <option value="Cambodia">Cambodia</option>
-                                    <option value="Cameroon">Cameroon</option>
-                                    <option value="Canada">Canada</option>
-                                    <option value="Canary Islands">Canary Islands</option>
-                                    <option value="Cape Verde">Cape Verde</option>
-                                    <option value="Cayman Islands">Cayman Islands</option>
-                                    <option value="Central African Republic">Central African Republic</option>
-                                    <option value="Chad">Chad</option>
-                                    <option value="Channel Islands">Channel Islands</option>
-                                    <option value="Chile">Chile</option>
-                                    <option value="China">China</option>
-                                    <option value="Christmas Island">Christmas Island</option>
-                                    <option value="Cocos Island">Cocos Island</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Comoros">Comoros</option>
-                                    <option value="Congo">Congo</option>
-                                    <option value="Cook Islands">Cook Islands</option>
-                                    <option value="Costa Rica">Costa Rica</option>
-                                    <option value="Cote DIvoire">Cote DIvoire</option>
-                                    <option value="Croatia">Croatia</option>
-                                    <option value="Cuba">Cuba</option>
-                                    <option value="Curaco">Curacao</option>
-                                    <option value="Cyprus">Cyprus</option>
-                                    <option value="Czech Republic">Czech Republic</option>
-                                    <option value="Denmark">Denmark</option>
-                                    <option value="Djibouti">Djibouti</option>
-                                    <option value="Dominica">Dominica</option>
-                                    <option value="Dominican Republic">Dominican Republic</option>
-                                    <option value="East Timor">East Timor</option>
-                                    <option value="Ecuador">Ecuador</option>
-                                    <option value="Egypt">Egypt</option>
-                                    <option value="El Salvador">El Salvador</option>
-                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
-                                    <option value="Eritrea">Eritrea</option>
-                                    <option value="Estonia">Estonia</option>
-                                    <option value="Ethiopia">Ethiopia</option>
-                                    <option value="Falkland Islands">Falkland Islands</option>
-                                    <option value="Faroe Islands">Faroe Islands</option>
-                                    <option value="Fiji">Fiji</option>
-                                    <option value="Finland">Finland</option>
-                                    <option value="France">France</option>
-                                    <option value="French Guiana">French Guiana</option>
-                                    <option value="French Polynesia">French Polynesia</option>
-                                    <option value="French Southern Ter">French Southern Ter</option>
-                                    <option value="Gabon">Gabon</option>
-                                    <option value="Gambia">Gambia</option>
-                                    <option value="Georgia">Georgia</option>
-                                    <option value="Germany">Germany</option>
-                                    <option value="Ghana">Ghana</option>
-                                    <option value="Gibraltar">Gibraltar</option>
-                                    <option value="Great Britain">Great Britain</option>
-                                    <option value="Greece">Greece</option>
-                                    <option value="Greenland">Greenland</option>
-                                    <option value="Grenada">Grenada</option>
-                                    <option value="Guadeloupe">Guadeloupe</option>
-                                    <option value="Guam">Guam</option>
-                                    <option value="Guatemala">Guatemala</option>
-                                    <option value="Guinea">Guinea</option>
-                                    <option value="Guyana">Guyana</option>
-                                    <option value="Haiti">Haiti</option>
-                                    <option value="Hawaii">Hawaii</option>
-                                    <option value="Honduras">Honduras</option>
-                                    <option value="Hong Kong">Hong Kong</option>
-                                    <option value="Hungary">Hungary</option>
-                                    <option value="Iceland">Iceland</option>
-                                    <option value="Indonesia">Indonesia</option>
-                                    <option value="India">India</option>
-                                    <option value="Iran">Iran</option>
-                                    <option value="Iraq">Iraq</option>
-                                    <option value="Ireland">Ireland</option>
-                                    <option value="Isle of Man">Isle of Man</option>
-                                    <option value="Israel">Israel</option>
-                                    <option value="Italy">Italy</option>
-                                    <option value="Jamaica">Jamaica</option>
-                                    <option value="Japan">Japan</option>
-                                    <option value="Jordan">Jordan</option>
-                                    <option value="Kazakhstan">Kazakhstan</option>
-                                    <option value="Kenya">Kenya</option>
-                                    <option value="Kiribati">Kiribati</option>
-                                    <option value="Korea North">Korea North</option>
-                                    <option value="Korea Sout">Korea South</option>
-                                    <option value="Kuwait">Kuwait</option>
-                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                    <option value="Laos">Laos</option>
-                                    <option value="Latvia">Latvia</option>
-                                    <option value="Lebanon">Lebanon</option>
-                                    <option value="Lesotho">Lesotho</option>
-                                    <option value="Liberia">Liberia</option>
-                                    <option value="Libya">Libya</option>
-                                    <option value="Liechtenstein">Liechtenstein</option>
-                                    <option value="Lithuania">Lithuania</option>
-                                    <option value="Luxembourg">Luxembourg</option>
-                                    <option value="Macau">Macau</option>
-                                    <option value="Macedonia">Macedonia</option>
-                                    <option value="Madagascar">Madagascar</option>
-                                    <option value="Malaysia">Malaysia</option>
-                                    <option value="Malawi">Malawi</option>
-                                    <option value="Maldives">Maldives</option>
-                                    <option value="Mali">Mali</option>
-                                    <option value="Malta">Malta</option>
-                                    <option value="Marshall Islands">Marshall Islands</option>
-                                    <option value="Martinique">Martinique</option>
-                                    <option value="Mauritania">Mauritania</option>
-                                    <option value="Mauritius">Mauritius</option>
-                                    <option value="Mayotte">Mayotte</option>
-                                    <option value="Mexico">Mexico</option>
-                                    <option value="Midway Islands">Midway Islands</option>
-                                    <option value="Moldova">Moldova</option>
-                                    <option value="Monaco">Monaco</option>
-                                    <option value="Mongolia">Mongolia</option>
-                                    <option value="Montserrat">Montserrat</option>
-                                    <option value="Morocco">Morocco</option>
-                                    <option value="Mozambique">Mozambique</option>
-                                    <option value="Myanmar">Myanmar</option>
-                                    <option value="Nambia">Nambia</option>
-                                    <option value="Nauru">Nauru</option>
-                                    <option value="Nepal">Nepal</option>
-                                    <option value="Netherland Antilles">Netherland Antilles</option>
-                                    <option value="Netherlands">Netherlands (Holland, Europe)</option>
-                                    <option value="Nevis">Nevis</option>
-                                    <option value="New Caledonia">New Caledonia</option>
-                                    <option value="New Zealand">New Zealand</option>
-                                    <option value="Nicaragua">Nicaragua</option>
-                                    <option value="Niger">Niger</option>
-                                    <option value="Nigeria">Nigeria</option>
-                                    <option value="Niue">Niue</option>
-                                    <option value="Norfolk Island">Norfolk Island</option>
-                                    <option value="Norway">Norway</option>
-                                    <option value="Oman">Oman</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="Palau Island">Palau Island</option>
-                                    <option value="Palestine">Palestine</option>
-                                    <option value="Panama">Panama</option>
-                                    <option value="Papua New Guinea">Papua New Guinea</option>
-                                    <option value="Paraguay">Paraguay</option>
-                                    <option value="Peru">Peru</option>
-                                    <option value="Phillipines">Philippines</option>
-                                    <option value="Pitcairn Island">Pitcairn Island</option>
-                                    <option value="Poland">Poland</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="Puerto Rico">Puerto Rico</option>
-                                    <option value="Qatar">Qatar</option>
-                                    <option value="Republic of Montenegro">Republic of Montenegro</option>
-                                    <option value="Republic of Serbia">Republic of Serbia</option>
-                                    <option value="Reunion">Reunion</option>
-                                    <option value="Romania">Romania</option>
-                                    <option value="Russia">Russia</option>
-                                    <option value="Rwanda">Rwanda</option>
-                                    <option value="St Barthelemy">St Barthelemy</option>
-                                    <option value="St Eustatius">St Eustatius</option>
-                                    <option value="St Helena">St Helena</option>
-                                    <option value="St Kitts-Nevis">St Kitts-Nevis</option>
-                                    <option value="St Lucia">St Lucia</option>
-                                    <option value="St Maarten">St Maarten</option>
-                                    <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
-                                    <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
-                                    <option value="Saipan">Saipan</option>
-                                    <option value="Samoa">Samoa</option>
-                                    <option value="Samoa American">Samoa American</option>
-                                    <option value="San Marino">San Marino</option>
-                                    <option value="Sao Tome & Principe">Sao Tome & Principe</option>
-                                    <option value="Saudi Arabia">Saudi Arabia</option>
-                                    <option value="Senegal">Senegal</option>
-                                    <option value="Seychelles">Seychelles</option>
-                                    <option value="Sierra Leone">Sierra Leone</option>
-                                    <option value="Singapore">Singapore</option>
-                                    <option value="Slovakia">Slovakia</option>
-                                    <option value="Slovenia">Slovenia</option>
-                                    <option value="Solomon Islands">Solomon Islands</option>
-                                    <option value="Somalia">Somalia</option>
-                                    <option value="South Africa">South Africa</option>
-                                    <option value="Spain">Spain</option>
-                                    <option value="Sri Lanka" selected>Sri Lanka</option>
-                                    <option value="Sudan">Sudan</option>
-                                    <option value="Suriname">Suriname</option>
-                                    <option value="Swaziland">Swaziland</option>
-                                    <option value="Sweden">Sweden</option>
-                                    <option value="Switzerland">Switzerland</option>
-                                    <option value="Syria">Syria</option>
-                                    <option value="Tahiti">Tahiti</option>
-                                    <option value="Taiwan">Taiwan</option>
-                                    <option value="Tajikistan">Tajikistan</option>
-                                    <option value="Tanzania">Tanzania</option>
-                                    <option value="Thailand">Thailand</option>
-                                    <option value="Togo">Togo</option>
-                                    <option value="Tokelau">Tokelau</option>
-                                    <option value="Tonga">Tonga</option>
-                                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
-                                    <option value="Tunisia">Tunisia</option>
-                                    <option value="Turkey">Turkey</option>
-                                    <option value="Turkmenistan">Turkmenistan</option>
-                                    <option value="Turks & Caicos Is">Turks & Caicos Is</option>
-                                    <option value="Tuvalu">Tuvalu</option>
-                                    <option value="Uganda">Uganda</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Ukraine">Ukraine</option>
-                                    <option value="United Arab Erimates">United Arab Emirates</option>
-                                    <option value="United States of America">United States of America</option>
-                                    <option value="Uraguay">Uruguay</option>
-                                    <option value="Uzbekistan">Uzbekistan</option>
-                                    <option value="Vanuatu">Vanuatu</option>
-                                    <option value="Vatican City State">Vatican City State</option>
-                                    <option value="Venezuela">Venezuela</option>
-                                    <option value="Vietnam">Vietnam</option>
-                                    <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
-                                    <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
-                                    <option value="Wake Island">Wake Island</option>
-                                    <option value="Wallis & Futana Is">Wallis & Futana Is</option>
-                                    <option value="Yemen">Yemen</option>
-                                    <option value="Zaire">Zaire</option>
-                                    <option value="Zambia">Zambia</option>
-                                    <option value="Zimbabwe">Zimbabwe</option>
-                                 </select>
                         </div>
+                    </div>
+                    <div class="row registration-form-row">
 
-                        <h5 class="registration-form-label registration-form-member">Team member 1 (Captain)</h5>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
-                                <input class="form-control" id="mem-1-name" name="mem-1-name"
-                                    placeholder="eg : A.D. John Doe" required type="text">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
-                                <input class="form-control" id="mem-1-age" max="26" min="18" name="mem-1-age"
-                                    placeholder="Age" required type="number">
-                            </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Country<sup>*</sup></h6>
+                            <select aria-label="Default select example" class="form-select" id="country" name="country">
+                                <option value="Afganistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bonaire">Bonaire</option>
+                                <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Canary Islands">Canary Islands</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands">Cayman Islands</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Channel Islands">Channel Islands</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island">Christmas Island</option>
+                                <option value="Cocos Island">Cocos Island</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Cook Islands">Cook Islands</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote DIvoire">Cote DIvoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Curaco">Curacao</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="East Timor">East Timor</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands">Falkland Islands</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana">French Guiana</option>
+                                <option value="French Polynesia">French Polynesia</option>
+                                <option value="French Southern Ter">French Southern Ter</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Great Britain">Great Britain</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="India">India</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea North">Korea North</option>
+                                <option value="Korea Sout">Korea South</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Macedonia">Macedonia</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Midway Islands">Midway Islands</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Nambia">Nambia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherland Antilles">Netherland Antilles</option>
+                                <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                <option value="Nevis">Nevis</option>
+                                <option value="New Caledonia">New Caledonia</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island">Norfolk Island</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau Island">Palau Island</option>
+                                <option value="Palestine">Palestine</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Phillipines">Philippines</option>
+                                <option value="Pitcairn Island">Pitcairn Island</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                <option value="Republic of Serbia">Republic of Serbia</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="St Barthelemy">St Barthelemy</option>
+                                <option value="St Eustatius">St Eustatius</option>
+                                <option value="St Helena">St Helena</option>
+                                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                <option value="St Lucia">St Lucia</option>
+                                <option value="St Maarten">St Maarten</option>
+                                <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                <option value="Saipan">Saipan</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="Samoa American">Samoa American</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka" selected>Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tahiti">Tahiti</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Erimates">United Arab Emirates</option>
+                                <option value="United States of America">United States of America</option>
+                                <option value="Uraguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Vatican City State">Vatican City State</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                <option value="Wake Island">Wake Island</option>
+                                <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zaire">Zaire</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
                         </div>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
-                                <input class="form-control" id="mem-1-email" name="mem-1-email"
-                                    placeholder="Email Address" required type="email">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
-                                <input class="form-control" id="mem-1-mob" maxlength="12" minlength="12"
-                                    name="mem-1-mob" placeholder="eg : +9412345678912" required type="text">
-                            </div>
+                    </div>
+
+                    <h5 class="registration-form-label registration-form-member">Team member 1 (Captain)</h5>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                            <input class="form-control" id="mem-1-name" name="mem-1-name"
+                                   placeholder="eg : A.D. John Doe" required type="text">
                         </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                            <input class="form-control" id="mem-1-age" max="26" min="18" name="mem-1-age"
+                                   placeholder="Age" required type="number">
+                        </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                            <input class="form-control" id="mem-1-email" name="mem-1-email"
+                                   placeholder="Email Address" required type="email">
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                            <input class="form-control" id="mem-1-mob" maxlength="12" minlength="12"
+                                   name="mem-1-mob" placeholder="eg : +9412345678912" required type="text">
+                        </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Name of the University / Educational Institute /
+                                Rotaract Club<sup>*</sup></h6>
+                            <input class="form-control" id="mem-1-institute-name" name="mem-1-institute-name"
+                                   placeholder="University / Educational Institute / Rotaract Club" required
+                                   type="text">
+                        </div>
+                    </div>
 
 
-                        <h5 class="registration-form-label registration-form-member">Team member 2</h5>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
-                                <input class="form-control" id="mem-2-name" name="mem-2-name"
-                                    placeholder="eg : A.D. John Doe" required type="text">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
-                                <input class="form-control" id="mem-2-age" max="26" min="18" name="mem-2-age"
-                                    placeholder="Age" required type="number">
-                            </div>
+                    <h5 class="registration-form-label registration-form-member">Team member 2</h5>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                            <input class="form-control" id="mem-2-name" name="mem-2-name"
+                                   placeholder="eg : A.D. John Doe" required type="text">
                         </div>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
-                                <input class="form-control" id="mem-2-email" name="mem-2-email"
-                                    placeholder="Email Address" required type="email">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
-                                <input class="form-control" id="mem-2-mob" maxlength="12" minlength="12"
-                                    name="mem-2-mob" placeholder="eg : +9412345678912" required type="text">
-                            </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                            <input class="form-control" id="mem-2-age" max="26" min="18" name="mem-2-age"
+                                   placeholder="Age" required type="number">
                         </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                            <input class="form-control" id="mem-2-email" name="mem-2-email"
+                                   placeholder="Email Address" required type="email">
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                            <input class="form-control" id="mem-2-mob" maxlength="12" minlength="12"
+                                   name="mem-2-mob" placeholder="eg : +9412345678912" required type="text">
+                        </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Name of the University / Educational Institute /
+                                Rotaract Club<sup>*</sup></h6>
+                            <input class="form-control" id="mem-2-institute-name" name="mem-2-institute-name"
+                                   placeholder="University / Educational Institute / Rotaract Club" required
+                                   type="text">
+                        </div>
+                    </div>
 
-                        <h5 class="registration-form-label registration-form-member">Team member 3 </h5>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
-                                <input class="form-control" id="mem-3-name" name="mem-3-name"
-                                    placeholder="eg : A.D. John Doe" required type="text">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Age<sup>*</sup></h6>
-                                <input class="form-control" id="mem-3-age" max="26" min="18" name="mem-3-age"
-                                    placeholder="Age" required type="number">
-                            </div>
+                    <h5 class="registration-form-label registration-form-member">Team member 3 </h5>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Full Name<sup>*</sup></h6>
+                            <input class="form-control" id="mem-3-name" name="mem-3-name"
+                                   placeholder="eg : A.D. John Doe" required type="text">
                         </div>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
-                                <input class="form-control" id="mem-3-email" name="mem-3-email"
-                                    placeholder="Email Address" required type="email">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
-                                <input class="form-control" id="mem-3-mob" maxlength="12" minlength="12"
-                                    name="mem-3-mob" placeholder="eg : +9412345678912" required type="text">
-                            </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Age<sup>*</sup></h6>
+                            <input class="form-control" id="mem-3-age" max="26" min="18" name="mem-3-age"
+                                   placeholder="Age" required type="number">
                         </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Email Address<sup>*</sup></h6>
+                            <input class="form-control" id="mem-3-email" name="mem-3-email"
+                                   placeholder="Email Address" required type="email">
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Mobile Number<sup>*</sup></h6>
+                            <input class="form-control" id="mem-3-mob" maxlength="12" minlength="12"
+                                   name="mem-3-mob" placeholder="eg : +9412345678912" required type="text">
+                        </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Name of the University / Educational Institute /
+                                Rotaract Club<sup>*</sup></h6>
+                            <input class="form-control" id="mem-3-institute-name" name="mem-3-institute-name"
+                                   placeholder="University / Educational Institute / Rotaract Club" required
+                                   type="text">
+                        </div>
+                    </div>
 
-                        <h5 class="registration-form-label registration-form-member">Team member 4 </h5>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Full Name<sup>**</sup></h6>
-                                <input class="form-control" id="mem-4-name" name="mem-4-name"
-                                    placeholder="eg : A.D. John Doe" required type="text">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Age<sup>**</sup></h6>
-                                <input class="form-control" id="mem-4-age" max="26" min="18" name="mem-4-age"
-                                    placeholder="Age" required type="number">
-                            </div>
+                    <h5 class="registration-form-label registration-form-member">Team member 4 </h5>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Full Name<sup>**</sup></h6>
+                            <input class="form-control" id="mem-4-name" name="mem-4-name"
+                                   placeholder="eg : A.D. John Doe" required type="text">
                         </div>
-                        <div class="row registration-form-row">
-                            <div class="form-group col-md-6">
-                                <h6 class="registration-form-label">Email Address<sup>**</sup></h6>
-                                <input class="form-control" id="mem-4-email" name="mem-4-email"
-                                    placeholder="Email Address" required type="email">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <h6 class="registration-form-label">Mobile Number<sup>**</sup></h6>
-                                <input class="form-control" id="mem-4-mob" maxlength="12" minlength="12"
-                                    name="mem-4-mob" placeholder="eg : +9412345678912" required type="text">
-                            </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Age<sup>**</sup></h6>
+                            <input class="form-control" id="mem-4-age" max="26" min="18" name="mem-4-age"
+                                   placeholder="Age" required type="number">
                         </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Email Address<sup>**</sup></h6>
+                            <input class="form-control" id="mem-4-email" name="mem-4-email"
+                                   placeholder="Email Address" required type="email">
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <h6 class="registration-form-label">Mobile Number<sup>**</sup></h6>
+                            <input class="form-control" id="mem-4-mob" maxlength="12" minlength="12"
+                                   name="mem-4-mob" placeholder="eg : +9412345678912" required type="text">
+                        </div>
+                    </div>
+                    <div class="row registration-form-row">
+                        <div class="form-group col-md-6">
+                            <h6 class="registration-form-label">Name of the University / Educational Institute /
+                                Rotaract Club<sup>*</sup></h6>
+                            <input class="form-control" id="mem-4-institute-name" name="mem-4-institute-name"
+                                   placeholder="University / Educational Institute / Rotaract Club" required
+                                   type="text">
+                        </div>
+                    </div>
 
-                        <div class="my-3">
-                            <div class="loading" id="loading">Loading</div>
-                            <div class="required" style="margin-top: 15px">These fields are required <sup>*</sup> </div>
-                            <div class="required">These fields are required if the team consists of 4 members
-                                <sup>**</sup> </div>
-                            <div class="error-message" id="error-message"></div>
-                            <div class="sent-message">Your registration details have been submitted. Thank you!</div>
-                        </div>
-                        <div class="text-center" style="margin-top: 60px">
-                            <button id="submit" type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-
+                    <div class="my-3">
+                        <div class="loading" id="loading">Loading</div>
+                        <div class="required" style="margin-top: 15px">These fields are required <sup>*</sup></div>
+                        <div class="required">These fields are required if the team consists of 4 members
+                            <sup>**</sup></div>
+                        <div class="error-message" id="error-message"></div>
+                        <div class="sent-message">Your registration details have been submitted. Thank you!</div>
+                    </div>
+                    <div class="text-center" style="margin-top: 60px">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
-        </section><!-- End Contact Section -->
-    </main>
 
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <img alt="Rotaract Club of University of Moratuwa" src="assets/img/Logo_2.png">
-                        <p>
-                            Rotaract Mora is about serving our kind and the living as a whole,
-                            exploring new territory, creating opportunities, and building future
-                            leaders. We are much more than the typical volunteer organization; our mission is to not
-                            only serve others but also to develop ourselves into better human beings
-                            through the process.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">About us</a>
-                            </li>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Timeline</a>
-                            </li>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Gallery</a>
-                            </li>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">FAQ</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a class="scrollto"
-                                    href="register.html">Register</a></li>
-                        </ul>
-                    </div>
-
-                  
-                    <div class="col-lg-4 col-md-6 footer-conts">
-                        <h4>Contact Us</h4>
-                        <p>
-                            Rotaract Club of University of Moratuwa,<br>
-                            University of Moratuwa,<br>
-                            Bandaranayake Mawatha,<br>
-                            Moratuwa. <br>
-                            10400 <br>
-                            <!--              <strong>Phone:</strong> +1 5589 55488 55<br>-->
-                            <strong>Email:</strong> admin@rotaractmora.org<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a class="twitter" href="https://twitter.com/RotaractMora"><i class="bi bi-twitter"></i></a>
-                            <a class="facebook" href="https://www.facebook.com/rotaractmora"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a class="instagram" href="https://www.instagram.com/rotaractmora"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a class="linkedin"
-                                href="https://lk.linkedin.com/company/rotaract-club-of-university-of-moratuwa"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a class="linkedin" href="https://www.youtube.com/user/rotaractmora"><i
-                                    class="bi bi-youtube"></i></a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
         </div>
+    </section><!-- End Contact Section -->
+</main>
 
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
         <div class="container">
-            <div class="copyright">
-                Copyright &copy; <a href="https://rotaractmora.org/"><strong>Rotaract Club of University of Moratuwa
-                        |</strong></a> All Rights Reserved
-            </div>
-            <div class="credits">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer-info">
+                    <img alt="Rotaract Club of University of Moratuwa" src="assets/img/Logo_2.png">
+                    <p>
+                        Rotaract Mora is about serving our kind and the living as a whole,
+                        exploring new territory, creating opportunities, and building future
+                        leaders. We are much more than the typical volunteer organization; our mission is to not
+                        only serve others but also to develop ourselves into better human beings
+                        through the process.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">About us</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Timeline</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">Gallery</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto" href="index.html">FAQ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a class="scrollto"
+                                                                   href="register.html">Register</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 footer-conts">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Rotaract Club of University of Moratuwa,<br>
+                        University of Moratuwa,<br>
+                        Bandaranayake Mawatha,<br>
+                        Moratuwa. <br>
+                        10400 <br>
+                        <!--              <strong>Phone:</strong> +1 5589 55488 55<br>-->
+                        <strong>Email:</strong> admin@rotaractmora.org<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a class="twitter" href="https://twitter.com/RotaractMora"><i class="bi bi-twitter"></i></a>
+                        <a class="facebook" href="https://www.facebook.com/rotaractmora"><i
+                                class="bi bi-facebook"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/rotaractmora"><i
+                                class="bi bi-instagram"></i></a>
+                        <a class="linkedin"
+                           href="https://lk.linkedin.com/company/rotaract-club-of-university-of-moratuwa"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a class="linkedin" href="https://www.youtube.com/user/rotaractmora"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+
+                </div>
 
             </div>
         </div>
-    </footer><!-- End  Footer -->
+    </div>
 
-    <a class="back-to-top d-flex align-items-center justify-content-center" href="#"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <div class="container">
+        <div class="copyright">
+            Copyright &copy; <a href="https://rotaractmora.org/"><strong>Rotaract Club of University of Moratuwa
+            |</strong></a> All Rights Reserved
+        </div>
+        <div class="credits">
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+        </div>
+    </div>
+</footer><!-- End  Footer -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<a class="back-to-top d-flex align-items-center justify-content-center" href="#"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/register.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/register.js"></script>
 
 </body>
 
