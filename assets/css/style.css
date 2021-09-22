@@ -520,9 +520,9 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
   }
     #hero{
-      background: linear-gradient(0deg, rgba(14, 2, 48, 0.918), rgba(0, 2, 12, 0.651)),url("../img/pricing-free.jpg");
+      background: linear-gradient(-22deg, rgba(14, 2, 48, 0.11), rgba(0, 2, 12, 0.075)),url("../img/bg/mob-background.png");
       background-repeat: no-repeat;
-      background-size:cover;
+      background-size:contain;
       background-position: center;
       height:70vh;
     
@@ -531,9 +531,9 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(6, 9, 19, 0.856);
     }
 
-    #hero .hideit {
+    /* #hero .hideit {
       visibility:visible !important;
-    }
+    } */
 
     #hero .about-btn{
       margin: 50px auto 0 !important;
@@ -2239,7 +2239,7 @@ h1 {
   border: 12px solid #112363;
   border-radius: 50px;
   transition: all .35s;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   padding-left: 40px;
   padding-right: 40px;
 }
