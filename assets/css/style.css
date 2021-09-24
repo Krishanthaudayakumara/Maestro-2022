@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:600px) {
   .section-with-bg-timeline{
     background-position:center;
-    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.753), rgba(245, 241, 255, 0.555)),url("../img/bg/bg_timeline.jpg" );
+    background-image: linear-gradient(50deg, rgba(125 104 55 / 55%), rgba(245, 241, 255, 0.555)),url("../img/bg/mob-timeline-background.png");
     
   }
 }
@@ -815,6 +815,70 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   margin-bottom: 20px;
   color: #fff;
+}
+p.about-end{
+  font-size: 1.5em !important;
+}
+
+/* Bimsara ayya-president mobile changes */
+
+@media (max-width:600px){
+  
+  body{
+    font-size:14px;
+  }
+
+  .link_wrapper a{
+    padding-bottom: 40px !important;
+    width:270px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  #about p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 0px 20px;
+  }
+
+  p.about-end{
+    font-size:20px !important;
+    text-align: center !important;
+  }
+
+  .faq-list {
+    margin: 0px 30px;
+  }
+
+  #guidlines p{
+    font-size: 14px !important;
+    text-align: justify;
+    margin: 0px 20px;
+  }
+
+  div.testimonials{
+    padding: 30px 30px !important;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .flag{
+    font-size:20px !important;
+    padding:0px 0px;
+  }
+
+  #footer .footer-top .footer-info{
+    padding: 0% 10%;
+  }
+}
+
+@media(min-width:768px)
+{
+  div.direction-r.flag-wrapper{
+    width:300px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2012,7 +2076,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .timeline li {
-    padding: 2em 0;
+    padding: 1.5em 30px;
   }
 
   .direction-l,
@@ -2029,6 +2093,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .flag-wrapper {
     text-align: center;
+    padding-top:5px;
+    padding-bottom: 2px;
     
   }
 
@@ -2217,7 +2283,8 @@ h1 {
 
 @media screen and (max-width: 660px){
   #guidlines p{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: justify; 
   }
   #guidlines{
     padding: 50px 0px 50px 0px;
@@ -2989,6 +3056,8 @@ ul#countdown li .label {
     margin-left:-14%;
     margin-right:-14%;
   }
+
+  
 }
 
 .testimonials .testimonial img
