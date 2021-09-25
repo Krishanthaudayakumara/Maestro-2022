@@ -822,6 +822,23 @@ p.about-end{
 
 /* Bimsara ayya-president mobile changes */
 
+@media (min-width: 768px) {
+  .direction-l span.flag {
+    padding-right:400px !important;
+  }
+  
+   .time-wrapper {
+    margin-top: -30px !important;
+  }
+
+
+  .direction-r span.flag {
+    padding-left:400px !important;
+    top: -30px;
+  }
+}
+
+
 @media (max-width:600px){
   
   body{
@@ -877,7 +894,7 @@ p.about-end{
 @media(min-width:768px)
 {
   div.direction-r.flag-wrapper{
-    width:300px !important;
+    
   }
 }
 
@@ -1389,10 +1406,12 @@ p.about-end{
 
 #faq .faq-list .collapsed {
   color: rgb(255, 255, 255);
+ 
 }
 
 #faq .faq-list .collapsed:hover {
   color: #edbf7b;
+  
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1952,7 +1971,7 @@ p.about-end{
   text-align: left;
 }
 
-.direction-l .flag {
+/* .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
@@ -1962,7 +1981,7 @@ p.about-end{
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-}
+} */
 
 .direction-l .flag:before,
 .direction-r .flag:before {
