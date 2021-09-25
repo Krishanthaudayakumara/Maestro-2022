@@ -825,21 +825,21 @@ p.about-end{
 
 
 
-@media (min-width: 768px) {
-  .direction-l span.flag {
-    padding-right:16em !important;
-  }
-  
-   .time-wrapper {
-    margin-top: -1.5em !important;
-  }
+  @media (min-width: 768px) {
+    .direction-l span.flag {
+      padding-right:16em !important;
+    }
+    
+    .time-wrapper {
+      margin-top: -1.5em !important;
+    }
 
 
-  .direction-r span.flag {
-    padding-left:16em !important;
-    top: -30px;
+    .direction-r span.flag {
+      padding-left:16em !important;
+      top: -30px;
+    }
   }
-}
 
 
 @media (max-width:600px){
@@ -1958,7 +1958,7 @@ p.about-end{
 
 .flag-wrapper {
   position: relative;
-  display: block;
+  display:inline-table;
 
   text-align: center;
   padding-bottom: 5px;
