@@ -867,6 +867,10 @@ p.about-end{
     margin: 0px 30px;
   }
 
+  #faqx .faq-list {
+    margin: 0px 15px !important;
+  }
+
   #guidlines p{
     font-size: 14px !important;
     text-align: justify;
@@ -1951,7 +1955,7 @@ p.about-end{
 
 .flag-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
 
   text-align: center;
   padding-bottom: 5px;
