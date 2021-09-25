@@ -822,18 +822,21 @@ p.about-end{
 
 /* Bimsara ayya-president mobile changes */
 
+
+
+
 @media (min-width: 768px) {
   .direction-l span.flag {
-    padding-right:400px !important;
+    padding-right:16em !important;
   }
   
    .time-wrapper {
-    margin-top: -30px !important;
+    margin-top: -1.5em !important;
   }
 
 
   .direction-r span.flag {
-    padding-left:400px !important;
+    padding-left:16em !important;
     top: -30px;
   }
 }
@@ -894,13 +897,13 @@ p.about-end{
     padding: 0% 10%;
   }
 }
-
+/* 
 @media(min-width:768px)
 {
   div.direction-r.flag-wrapper{
     
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Speakers Section
