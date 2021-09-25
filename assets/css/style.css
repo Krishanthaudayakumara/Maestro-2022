@@ -822,10 +822,48 @@ p.about-end{
 
 /* Bimsara ayya-president mobile changes */
 
+@media(min-width:768px)
+{
+  .flag-wrapper{
+    width: 100%;
+  }
+
+  .direction-r span.timeline-ball{
+    left: -39px !important;
+  }
 
 
+  .direction-l span.timeline-ball{
+    right: -39px !important;
+  }
 
-  @media (min-width: 768px) {
+  .timeline-ball{
+  
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    content: ' ';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(237, 191, 123);
+    z-index: 10;
+  }
+
+  .direction-l .flag:before, .direction-r .flag:before{ 
+    visibility: hidden;
+  }
+
+  .direction-l .flag:after, .direction-r .flag:after{
+    visibility: hidden;
+  }
+}
+
+
+  /* @media (min-width: 768px) {
     .direction-l span.flag {
       padding-right:16em !important;
     }
@@ -839,7 +877,8 @@ p.about-end{
       padding-left:16em !important;
       top: -30px;
     }
-  }
+    
+  } */
 
 
 @media (max-width:600px){
@@ -1958,7 +1997,7 @@ p.about-end{
 
 .flag-wrapper {
   position: relative;
-  display:inline-table;
+  display:inline-block;
 
   text-align: center;
   padding-bottom: 5px;
