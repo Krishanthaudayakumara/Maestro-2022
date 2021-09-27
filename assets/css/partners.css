@@ -39,12 +39,12 @@ iframe{
     height: 100%;
 }
 
-.video-sec iframe:hover{
+/* .video-sec iframe:hover{
     width: 112%;
     cursor: pointer;
     z-index: 2;
     transition: all 0.5s;
-}
+} */
 
 
 .video-sec{
