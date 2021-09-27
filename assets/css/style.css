@@ -1380,7 +1380,7 @@ p.about-end{
   }
 
   #supporters .supporter-logo img{
-    max-width: 250px;
+    max-width: 200px;
   }
 }
 
@@ -1417,6 +1417,12 @@ p.about-end{
   border-bottom: 1px solid #e9eaed;
   margin-bottom: 20px;
   padding-bottom: 20px;
+}
+
+@media(max-width:767px){
+  #faq .faq-list .question {
+    padding-left: 0px !important;
+  }
 }
 
 #faq .faq-list .question {
