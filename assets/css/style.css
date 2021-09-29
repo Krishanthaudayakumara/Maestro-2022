@@ -11,7 +11,7 @@
 body {
   background: #040919;
   color: #2f3138;
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
 }
 
 a {
@@ -33,7 +33,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   color: rgb(5, 45, 79);
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
@@ -603,7 +603,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   color: #fff;
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 75px;
   font-weight: 600;
   text-transform: uppercase;
@@ -703,7 +703,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .about-btn {
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -769,14 +769,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .about-title{
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: bolder;
   font-size: 50px;
   padding-bottom: 40px;
 }
 
 .about-desc{
-  font-family: "raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 300;
 }
 
@@ -1432,7 +1432,7 @@ p.about-end{
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: "raleway", SansSerif;
+  font-family: "open sans", SansSerif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1447,6 +1447,12 @@ p.about-end{
   position: absolute;
   left: 0;
   top: -2px;
+}
+
+@media(max-width:600px){
+  #faq .faq-list i{
+    left:-18px;
+  }
 }
 
 #faq .faq-list p {
@@ -3208,6 +3214,10 @@ why maestro sec2 */
 @media only screen and (max-width: 600px) {
   .middlewm .question{
     font-size:20px !important;
+  }
+
+  .middlewm i{
+    margin-right: 0px !important;
   }
 }
 
