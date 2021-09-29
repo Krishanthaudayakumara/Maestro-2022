@@ -1453,6 +1453,12 @@ p.about-end{
   #faq .faq-list i{
     left:-18px;
   }
+
+  #faq .faq-list i.upb{
+    left:0px !important;
+  }
+
+
 }
 
 #faq .faq-list p {
