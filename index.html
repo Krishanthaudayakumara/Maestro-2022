@@ -948,13 +948,6 @@
   <script>
     function sendMail(e) {
       e.preventDefault();
-      const options = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      };
       var name = document.getElementById('name').value; 
       var email = document.getElementById('email').value;
       var sub = document.getElementById('subject').value;
@@ -972,8 +965,6 @@
               <tr><td>Subject</td><td>: ` + sub + `</td></tr>
             </table><br />
             <p>` + msg + `</p>`;
-
-      console.log(data);
 
       fetch('https://us-central1-manusathhanda.cloudfunctions.net/sendMail', {
         'method': 'POST',

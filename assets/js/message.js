@@ -1,10 +1,10 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyAscGIgvh8t4TBEsaxyjeLWpyYaha90HGI",
-    authDomain: "maestrotest-e1684.firebaseapp.com",
-    projectId: "maestrotest-e1684",
-    storageBucket: "maestrotest-e1684.appspot.com",
-    messagingSenderId: "1075019959077",
-    appId: "1:1075019959077:web:955ed58fa689105763e8cc"
+    apiKey: "AIzaSyA4B4GhXuRnVk8hr5ajxCM5WWsDDPsrNAI",
+    authDomain: "maestro-test-a20ac.firebaseapp.com",
+    projectId: "maestro-test-a20ac",
+    storageBucket: "maestro-test-a20ac.appspot.com",
+    messagingSenderId: "975056344681",
+    appId: "1:975056344681:web:782b57faed401d107134f8"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
