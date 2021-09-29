@@ -11,7 +11,7 @@
 body {
   background: #040919;
   color: #2f3138;
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
 }
 
 a {
@@ -33,7 +33,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:600px) {
   .section-with-bg-timeline{
     background-position:center;
-    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.753), rgba(245, 241, 255, 0.555)),url("../img/bg/bg_timeline.jpg" );
+    background-image: linear-gradient(50deg, rgba(125 104 55 / 55%), rgba(245, 241, 255, 0.555)),url("../img/bg/mob-timeline-background.png");
     
   }
 }
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   color: rgb(5, 45, 79);
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
@@ -603,7 +603,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 75px;
   font-weight: 600;
   text-transform: uppercase;
@@ -703,7 +703,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .about-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -769,14 +769,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .about-title{
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: bolder;
   font-size: 50px;
   padding-bottom: 40px;
 }
 
 .about-desc{
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 300;
 }
 
@@ -816,6 +816,133 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   color: #fff;
 }
+p.about-end{
+  font-size: 1.5em !important;
+}
+
+/* Bimsara ayya-president mobile changes */
+
+@media(min-width:768px)
+{
+  .flag-wrapper{
+    width: 100%;
+  }
+
+  .direction-r span.timeline-ball{
+    left: -39px !important;
+  }
+
+
+  .direction-l span.timeline-ball{
+    right: -39px !important;
+  }
+
+  .timeline-ball{
+  
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    content: ' ';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(237, 191, 123);
+    z-index: 10;
+  }
+
+  .direction-l .flag:before, .direction-r .flag:before{ 
+    visibility: hidden;
+  }
+
+  .direction-l .flag:after, .direction-r .flag:after{
+    visibility: hidden;
+  }
+}
+
+
+  /* @media (min-width: 768px) {
+    .direction-l span.flag {
+      padding-right:16em !important;
+    }
+    
+    .time-wrapper {
+      margin-top: -1.5em !important;
+    }
+
+
+    .direction-r span.flag {
+      padding-left:16em !important;
+      top: -30px;
+    }
+    
+  } */
+
+
+@media (max-width:600px){
+  
+  body{
+    font-size:14px;
+  }
+
+  .link_wrapper a{
+    padding-bottom: 40px !important;
+    width:270px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  #about p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 0px 20px;
+  }
+
+  p.about-end{
+    font-size:20px !important;
+    text-align: center !important;
+  }
+
+  .faq-list {
+    margin: 0px 30px;
+  }
+
+  #faqx .faq-list {
+    margin: 0px 15px !important;
+  }
+
+  #guidlines p{
+    font-size: 14px !important;
+    text-align: justify;
+    margin: 0px 20px;
+  }
+
+  div.testimonials{
+    padding: 30px 30px !important;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .flag{
+    font-size:20px !important;
+    padding:0px 0px;
+  }
+
+  #footer .footer-top .footer-info{
+    padding: 0% 10%;
+  }
+}
+/* 
+@media(min-width:768px)
+{
+  div.direction-r.flag-wrapper{
+    
+  }
+} */
 
 /*--------------------------------------------------------------
 # Speakers Section
@@ -1253,7 +1380,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #supporters .supporter-logo img{
-    max-width: 250px;
+    max-width: 200px;
   }
 }
 
@@ -1292,10 +1419,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
 }
 
+@media(max-width:767px){
+  #faq .faq-list .question {
+    padding-left: 0px !important;
+  }
+
+  #faq .faq-list p{
+    padding: 5px !important;  
+  }
+}
+
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: "Poppins", SansSerif;
+  font-family: "open sans", SansSerif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1312,6 +1449,18 @@ h1, h2, h3, h4, h5, h6 {
   top: -2px;
 }
 
+@media(max-width:600px){
+  #faq .faq-list i{
+    left:-18px;
+  }
+
+  #faq .faq-list i.upb{
+    left:0px !important;
+  }
+
+
+}
+
 #faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
@@ -1325,10 +1474,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #faq .faq-list .collapsed {
   color: rgb(255, 255, 255);
+ 
 }
 
 #faq .faq-list .collapsed:hover {
   color: #edbf7b;
+  
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1868,7 +2019,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .flag-wrapper {
   position: relative;
-  display: inline-block;
+  display:inline-block;
 
   text-align: center;
   padding-bottom: 5px;
@@ -1888,7 +2039,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-.direction-l .flag {
+/* .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
@@ -1898,7 +2049,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-}
+} */
 
 .direction-l .flag:before,
 .direction-r .flag:before {
@@ -2012,7 +2163,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .timeline li {
-    padding: 2em 0;
+    padding: 1.5em 30px;
   }
 
   .direction-l,
@@ -2029,6 +2180,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .flag-wrapper {
     text-align: center;
+    padding-top:5px;
+    padding-bottom: 2px;
     
   }
 
@@ -2188,7 +2341,7 @@ h1 {
 /*      Registration Form CSS Rules     */
 
 .registration-form-body{
-  font-family: "Poppins", sans-serif
+  font-family: "raleway", sans-serif
 }
 
 .registration-form-row {
@@ -2217,7 +2370,8 @@ h1 {
 
 @media screen and (max-width: 660px){
   #guidlines p{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: justify; 
   }
   #guidlines{
     padding: 50px 0px 50px 0px;
@@ -2305,6 +2459,7 @@ h1 {
 
 /*test*/
 ul#countdown {
+  display: flex;
   position: relative;
   width: 50%;
   margin: 0 auto 20px;
@@ -2989,6 +3144,8 @@ ul#countdown li .label {
     margin-left:-14%;
     margin-right:-14%;
   }
+
+  
 }
 
 .testimonials .testimonial img
@@ -3063,6 +3220,10 @@ why maestro sec2 */
 @media only screen and (max-width: 600px) {
   .middlewm .question{
     font-size:20px !important;
+  }
+
+  .middlewm i{
+    margin-right: 0px !important;
   }
 }
 
@@ -3168,3 +3329,70 @@ why maestro sec2 */
       #myBtn{
         cursor: pointer;
       }
+
+      /* contact us socials */
+
+/* .social-menu{
+  display: grid;
+  place-items: center;
+  margin-top:5%;
+}
+
+      .social-menu ul{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    
+    .social-menu ul li{
+        list-style: none;
+        margin: 0 15px;
+    }
+    
+    .social-menu ul li .fab{
+        font-size: 30px;
+        line-height: 60px;
+        transition: .3s;
+        color: #000;
+    }
+    
+    .social-menu ul li .fab:hover{
+        color: #fff;
+    }
+    
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    
+    .social-menu ul li a:hover{
+        transform: translate(0, -10%);
+    }
+    
+    .social-menu ul li:nth-child(1) a:hover{
+        background-color: rgba(252, 255, 64, 0.829);
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+        background-color: #f5e132;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+        background-color: #fffc43;
+    }
+    .social-menu ul li:nth-child(4) a:hover{
+        background-color: rgb(255, 236, 64);
+    } */
+
+.fb-btn{
+  color:#051f47;
+}

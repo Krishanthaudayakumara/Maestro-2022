@@ -99,7 +99,7 @@
                             <div class="form-group col-md-6">
                                 <h6 class="registration-form-label">Number of team members<sup>*</sup></h6>
                                 <!--                            <input class="form-control" id="team-count" name="team-count" placeholder="Number of team members" required-->
-                                <!--                                   type="number">-->
+                                <!--                                     type="number">-->
                                 <select aria-label="Default select example" class="form-select" id="members" required>
                                     <option value="3">Three</option>
                                     <option selected value="4">Four</option>
@@ -111,7 +111,7 @@
 
                         <div class="form-group col-md-6 mt-3 mt-md-0">
                             <h6 class="registration-form-label">Country<sup>*</sup></h6>
-                            <select aria-label="Default select example" class="form-select" id="country" name="country">
+                            <select aria-label="Default select example" class="form-select" id="country" name="country" required>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -509,7 +509,7 @@
                         <div class="required">These fields are required if the team consists of 4 members
                             <sup>**</sup></div>
                         <div class="error-message" id="error-message"></div>
-                        <div class="sent-message">Your registration details have been submitted. Thank you!</div>
+                        <div class="sent-message" style="color: #fff">Your registration details have been submitted. Thank you!</div>
                     </div>
                     <div class="text-center" style="margin-top: 60px">
                         <button id="submit" type="submit">Submit</button>
