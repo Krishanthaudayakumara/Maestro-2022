@@ -128,3 +128,10 @@ video{
 
     }
 }
+
+@media(max-width:600px){
+    div.col-xs-6{
+        width: 100% !important;
+    }
+}
+
