@@ -2664,7 +2664,7 @@ ul#countdown li .label {
 #contact-us {
   padding: 60px 0;
   background-color:white;
-  background-image: url("/assets/img/bg/bg_timeline.jpg");
+  /* background-image: url("/assets/img/bg/bg_timeline.jpg"); */
    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
