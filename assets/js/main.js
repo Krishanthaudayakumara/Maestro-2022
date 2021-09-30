@@ -330,36 +330,26 @@
 $(".wm1").hover(
     function(){
         $("#wm1").collapse("show");
-    },function(){
-        $("#wm1").collapse("hide");
     }
 );
 $(".wm2").hover(
     function(){
         $("#wm2").collapse("show");
-    },function(){
-        $("#wm2").collapse("hide");
     }
 );
 $(".wm3").hover(
     function(){
         $("#wm3").collapse("show");
-    },function(){
-        $("#wm3").collapse("hide");
     }
 );
 $(".wm4").hover(
     function(){
         $("#wm4").collapse("show");
-    },function(){
-        $("#wm4").collapse("hide");
     }
 );
 $(".wm5").hover(
     function(){
         $("#wm5").collapse("show");
-    },function(){
-        $("#wm5").collapse("hide");
     }
 );
 
