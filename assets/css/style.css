@@ -535,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
     #hero{
       background: url("../img/bg/mob-background.png");
       background-repeat: no-repeat;
-      background-size:contain;
+      background-size:cover;
       background-position: center;
       height:70vh;
     
