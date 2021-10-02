@@ -32,6 +32,7 @@ subButton.addEventListener("click", ev => {
     // let institute = document.getElementById('institute-name').value
     let team_name = document.getElementById('team-name').value
     let members = document.getElementById('members').value
+    let country = document.getElementById('country').value
 
     let mem_1_name = document.getElementById('mem-1-name').value
     let mem_1_age = document.getElementById('mem-1-age').value
@@ -63,6 +64,7 @@ subButton.addEventListener("click", ev => {
     data = {
         team_name,
         members,
+        country,
         mem_1_name,
         mem_1_age,
         mem_1_email,
@@ -91,6 +93,7 @@ subButton.addEventListener("click", ev => {
         db.doc().set({
             team_name: team_name,
             members: members,
+            country: country,
             mem_1_name: mem_1_name,
             mem_1_age: mem_1_age,
             mem_1_email: mem_1_email,
