@@ -20,6 +20,7 @@ db.get().then((results) =>{
     results.forEach((doc) =>{
         createCard(doc.data().team_name,
             doc.data().members,
+            doc.data().country,
             doc.data().mem_1_name,
             doc.data().mem_1_age,
             doc.data().mem_1_email,
@@ -51,7 +52,7 @@ db2.get().then((results) =>{
 })
 
 
-function createCard(teamName, members, mem1name, mem1age, mem1email, mem1mob,mem1inst,
+function createCard(teamName, members, country, mem1name, mem1age, mem1email, mem1mob,mem1inst,
                     mem2name, mem2age, mem2email, mem2mob,mem2inst,
                     mem3name, mem3age, mem3email, mem3mob,mem3inst,
                     mem4name, mem4age, mem4email, mem4mob,mem4inst) {
@@ -71,6 +72,7 @@ function createCard(teamName, members, mem1name, mem1age, mem1email, mem1mob,mem
                             <div class="col-sm"><strong>Team name :</strong> ${teamName}</div>
                            
                             <div class="col-sm"><strong>No. of team members :</strong> ${members}</div>
+                            <div class="col-sm"><strong>Country : </strong> ${country}</div>
                         </div>
 
                         <h5>Team Captain</h5>
