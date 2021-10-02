@@ -1003,6 +1003,7 @@
   <script>
     function sendMail(e) {
       e.preventDefault();
+      console.log('working');
       var name = document.getElementById('name').value; 
       var email = document.getElementById('email').value;
       var sub = document.getElementById('subject').value;
@@ -1014,22 +1015,20 @@
         sub
       }
 
-      const body = `<h1>A new registration for Maestro 2021</h1><br />
+      const bodymsg = `<h1>A new messge</h1><br />
             <table>
               <tr><td>From</td><td>: ` + name + ' <' + email + `></td></tr>
               <tr><td>Subject</td><td>: ` + sub + `</td></tr>
             </table><br />
             <p>` + msg + `</p>`;
 
-      fetch('https://us-central1-manusathhanda.cloudfunctions.net/sendMail', {
+      fetch('http://us-central1-manusathhanda.cloudfunctions.net/sendMail', {
         'method': 'POST',
         'body': JSON.stringify({
-          from: `${name} <${email}>`,
-          // to: 'Ranul Navojith <ranulnavoijith@gmail.com>',
-          to: 'ranul@rotaractmora.org',
-          cc: 'ranulnavoijith@gmaill.com',
-          subject: sub,
-          html: body
+          from: `${data.name} <${data.email}>`,
+          to: 'maestro@rotaractmora.org',
+          subject: data.sub,
+          html: bodymsg
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -1043,6 +1042,8 @@
       }).catch((err) => {
           console.log(err);
       })
+
+      saveMail();
     }
 
   </script>

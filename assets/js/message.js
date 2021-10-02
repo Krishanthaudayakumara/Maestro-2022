@@ -15,9 +15,9 @@ console.log("done")
 const db = firestore.collection("messages");
 let sendBtn = document.getElementById('sendMsg');
 
-sendBtn.addEventListener("click",e=>{
-    console.log("done")
-    e.preventDefault()
+//sendBtn.addEventListener("click",e => {
+function saveMail() {
+    // e.preventDefault()
     document.getElementById("loading").style.display = "block";
     document.getElementById("msgSent").style.display = "none";
     let data = {
@@ -38,7 +38,6 @@ sendBtn.addEventListener("click",e=>{
         db.doc().set(data).then(()=>{
             document.getElementById("loading").style.display = "none";
             document.getElementById("msgSent").style.display = "block";
-            console.log("done 2")
 
         }).catch((e)=>{
             console.log(e)
@@ -46,4 +45,4 @@ sendBtn.addEventListener("click",e=>{
     }else{
         document.getElementById("loading").style.display = "none";
     }
-})
+}

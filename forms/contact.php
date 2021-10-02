@@ -50,7 +50,7 @@
 		$message	= $_POST['message'];
 
 		$to	 		  = 'ranul@rotaractmora.org';
-		$mail_subject = 'Message from Website';
+		$mail_subject = 'Message from Maestro';
 		$email_body   = "Message from Contact Us Page of the Website: <br>";
 		$email_body   .= "<b>From:</b> {$fullname} <br>";
 		$email_body   .= "<b>Subject:</b> {$subject} <br>";
