@@ -15,6 +15,36 @@ var firestore = firebase.firestore()
 const db = firestore.collection("teamRegister")
 const db2 = firestore.collection("messages")
 
+
+db.get().then((querySnapshot) => {
+    const docs = [];
+
+    querySnapshot.forEach((doc) => {
+        docs.push(doc.data());
+    });
+    // downloadCSV('registrations.csv', docs);
+});
+
+function downloadCSV(filename, array) {
+    let data = '#,"Team Name","Country",Members,"Member 01 - name","Member 01 - age","Member 01 - university","Member 01 - email","Member 01 - contact no","Member 02 - name","Member 02 - age","Member 02 - university","Member 02 - email","Member 02 - contact no","Member 03 - name","Member 03 - age","Member 03 - university","Member 03 - email","Member 03 - contact no","Member 04 - name","Member 04 - age","Member 04 - university","Member 04 - email","Member 04 - contact no"\n';
+
+    array.forEach((e, index) => {
+      data += `${index + 1},"${e.team_name}","${e.country}","${e.members}","${e.mem_1_name}","${e.mem_1_age}","${e.mem_1_inst}","${e.mem_1_email}","${e.mem_1_phone}","${e.mem_2_name}","${e.mem_2_age}","${e.mem_2_inst}","${e.mem_2_email}","${e.mem_2_phone}","${e.mem_3_name}","${e.mem_3_age}","${e.mem_3_inst}","${e.mem_3_email}","${e.mem_3_phone}","${e.mem_4_name}","${e.mem_4_age}","${e.mem_4_inst}","${e.mem_4_email}","${e.mem_4_phone}"\n`;
+    });
+
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(data));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  }
+
+
+
+
 //get registration forms
 db.get().then((results) =>{
     results.forEach((doc) =>{
