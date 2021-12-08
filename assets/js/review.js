@@ -43,6 +43,50 @@ function downloadCSV(filename, array) {
   }
 
 
+//   var firebaseConfig = {
+//     apiKey: "AIzaSyCa9XY_JD5Be9CFTB9SMy044wq7vPxgK1o",
+//     authDomain: "pearl-pacify.firebaseapp.com",
+//     databaseURL: "https://pearl-pacify-default-rtdb.firebaseio.com",
+//     projectId: "pearl-pacify",
+//     storageBucket: "pearl-pacify.appspot.com",
+//     messagingSenderId: "524734528599",
+//     appId: "1:524734528599:web:b9e64d3a35e94025203712"
+// };
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+// var firestore = firebase.firestore()
+
+// //access database
+// const db = firestore.collection("Submissions")
+
+
+// db.get().then((querySnapshot) => {
+//     const docs = [];
+
+//     querySnapshot.forEach((doc) => {
+//         docs.push(doc.data());
+//     });
+//     downloadCSV('registrations.csv', docs);
+// });
+
+// function downloadCSV(filename, array) {
+//     let data = '#,"Name","NIC","age","contact_no","Email","Country","address","University","Participate_type","Members","Submission_type","title","description","video_URL"\n';
+
+//     array.forEach((e, index) => {
+//         data += `${index + 1},"${e.name}","${e.nic}","${e.age}","${e.contact_number}","${e.email}","${e.country}","${e.address}","${e.university}","${e.participate}","${e.member}","${e.submission_type}","${e.title}","${e.details}","${e.submission_url}"\n`;
+//     });
+
+//     const element = document.createElement('a');
+//     element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(data));
+//     element.setAttribute('download', filename);
+
+//     element.style.display = 'none';
+//     document.body.appendChild(element);
+//     element.click();
+//     document.body.removeChild(element);
+// }
+
+
 
 
 //get registration forms
