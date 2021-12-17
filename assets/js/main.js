@@ -363,8 +363,7 @@ var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -382,11 +381,13 @@ btn3.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 for (let i = 0; i < 5; i++){
-span[i].onclick = function() {
-  modal.style.display = "none";
-  modal2.style.display = "none";
-  modal3.style.display = "none";
-}
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+    span[i].onclick = function() {
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    }
 }
 
 
